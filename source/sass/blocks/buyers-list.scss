@@ -1,0 +1,7 @@
+.buyers-list {
+  @include text-second;
+}
+
+.buyers-list__link {
+  color: $color-main-second;
+}

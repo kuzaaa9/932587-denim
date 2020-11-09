@@ -1,0 +1,43 @@
+
+@mixin list-reset($padding-left:0) {
+  margin: 0;
+  padding-left: $padding-left;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+@mixin no-outline {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+@mixin text-main {
+  font-size: 18px;
+  line-height: auto;
+  font-weight: 500;
+  color: $color-main-second;
+}
+
+@mixin text-second {
+  font-size: 16px;
+  line-height: auto;
+  color: $color-main-second;
+}
+
+@mixin text-title {
+  font-size: 32px;
+  line-height: auto;
+  font-weight: 700;
+  color: $color-main-second;
+}
+
+@mixin text-logo {
+  font-size: 24px;
+  line-height: auto;
+  font-weight: 800;
+  color: $color-main-second;
+}
