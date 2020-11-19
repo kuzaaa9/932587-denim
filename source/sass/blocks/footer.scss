@@ -1,0 +1,14 @@
+.footer {
+  display: block;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 0 auto;
+  height: 222px;
+  padding: 46px 445px 50px 445px;
+  color: $color-background;
+  background-color: $color-main-second;
+}
+
+.footer__logo {
+  text-align: center;
+}

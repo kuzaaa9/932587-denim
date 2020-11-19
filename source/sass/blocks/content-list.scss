@@ -1,11 +1,30 @@
+.content-list {
+  @include list-reset;
+  margin-left: 170px;
+  padding-top: 18px;
+}
+
 .content-list__slogan {
+  @include list-reset;
+
   font-weight: 400;
   color: $text-secondary-color;
 }
 
 .content-list__title {
-  font-family: "Antonio","Arial", sans-serif;
+  @include list-reset;
+
+  padding-bottom: 30px;
+  margin-left: -5px;
+  font-family: "Anton", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 98px;
+  font-size: 128px;
   text-transform: uppercase;
+}
+
+
+.content-list__btn {
+  display: block;
+  width: 219px;
+  padding: 23px 24px 23px 24px;
 }

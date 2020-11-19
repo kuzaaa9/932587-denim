@@ -1,0 +1,12 @@
+.card {
+  @include list-reset;
+}
+
+.card__title {
+  @include text-main;
+}
+
+.card__price {
+  @include text-second;
+  font-weight: 700;
+}

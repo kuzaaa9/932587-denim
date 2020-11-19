@@ -1,0 +1,23 @@
+.content-block {
+  @include list-reset;
+
+  width: 305px;
+  box-sizing: border-box;
+  margin-left: 200px;
+}
+
+.content-block__slogan {
+  @include list-reset;
+
+  padding-top: 5px;
+  padding-bottom: 25px;
+  font-weight: 400;
+  color: $text-secondary-color;
+}
+
+.content-block__title {
+  @include list-reset;
+  @include text-title;
+
+  line-height: 125%;
+}

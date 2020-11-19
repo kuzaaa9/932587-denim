@@ -1,0 +1,12 @@
+.social-wrapp {
+  display: flex;
+  justify-content: center;
+
+  @include list-reset;
+}
+
+.social-wrapp__item {
+  width: 21px;
+  height: 21px;
+  padding: 0 13px;
+}

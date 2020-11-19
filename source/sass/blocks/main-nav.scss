@@ -1,0 +1,15 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+  background-color: $color-background;
+}
+
+.main-nav--row {
+  justify-content: space-between;
+}
+
+.main-nav__logo {
+  text-align: center;
+}

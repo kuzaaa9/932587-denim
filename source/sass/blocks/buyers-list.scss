@@ -1,7 +1,46 @@
 .buyers-list {
+  position: relative;
+  top: 145px;
+  align-items: center;
+
+  @include list-reset;
   @include text-second;
+
+  order: -1;
 }
+
+// @media (min-width: $tablet-width) {
+  // .buyers-list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // top: 110px;
+  // }
+// }
+
+.buyers-list__item {
+  padding-bottom: 26px;
+}
+
+// @media (min-width: $tablet-width) {
+  // .buyers-list__item {
+    // padding-right: 35px;
+    // padding-bottom: 0;
+  // }
+// }
 
 .buyers-list__link {
   color: $color-main-second;
+}
+
+
+
+.buyers-list--row {
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buyers-list__item--row {
+  padding-bottom: 0;
+  padding-right: 35px;
 }

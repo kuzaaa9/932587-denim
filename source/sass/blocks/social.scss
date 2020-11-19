@@ -1,3 +1,11 @@
+.social {
+  @include list-reset;
+}
+
+.social li:not(:last-child) {
+  padding-bottom: 24px;
+}
+
 .social__link {
   color: $color-main-second;
   font-size: 14px;

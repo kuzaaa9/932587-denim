@@ -1,0 +1,16 @@
+.nav-service__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 0 29px;
+
+  @include list-reset;
+
+}
+
+.nav-service__item {
+ padding-right: 35px;
+}
+
+.nav-service__link {
+  color: $color-background;
+}

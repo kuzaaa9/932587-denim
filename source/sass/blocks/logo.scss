@@ -1,3 +1,10 @@
 .logo {
+  display: block;
+  padding: 0 10px;
+
   @include text-logo;
-  }
+}
+
+.logo--color {
+  color: $color-background;
+}
