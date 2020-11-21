@@ -1,51 +1,102 @@
 .promo-photo {
   position: relative;
-  margin-right: 170px;
-  height: auto;
+  order: -1;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
-.promo-photo::before,
-.promo-photo::after {
-  content: "";
-  position: absolute;
-  width: 232px;
-  height: 176px;
-  background: $color-main url("../img/diagonal.svg");
-  z-index: 10;
-}
+// .promo-photo::before,
+// .promo-photo::after {
+// content: "";
+// position: absolute;
+// width: 109px;
+// height: 80px;
+// background: $color-main url("../img/diagonal.svg");
+// z-index: 10;
+// }
+// .promo-photo::before {
+// top: -20px;
+// left: -20px;
+// transform: matrix(-1, 0, 0, 1, 0, 0);
+// }
 
-.promo-photo::before {
-  top: -50px;
-  left: -50px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
+// .promo-photo::after {
+// bottom: 0px;
+// right: 0px;
+// }
 
-.promo-photo::after {
-  bottom: -50px;
-  right: -50px;
-}
+// @media (min-width: $tablet-width) {
+// .promo-photo::before,
+// .promo-photo::after {
+// width: 141px;
+// height: 104px;
+// }
+//}
 
+// @media (min-width: $desktop-width) {
+// .promo-photo::before,
+// .promo-photo::after {
+// width: 232px;
+// height: 176px;
+// }
+// }
+
+// @media (min-width: $tablet-width){
+// .promo-photo::before {
+// top:-30px;
+// left: -30px;
+// }
+// }
+
+// @media (min-width: $tablet-width){
+// .promo-photo::before {
+// top: -50px;
+// left: -50px;
+// }
+// }
+
+// / сделана замена фото на 3 медиазапросах
 .promo-photo__img {
   position: relative;
+  width: 202px;
+  height: 249px;
   z-index: 1000;
 }
 
-.promo-photo--catalog {
-  position: relative;
-  margin-right: 270px;
+@media (min-width: $tablet-width) {
+  .promo-photo__img {
+    width: 264px;
+    height: 319px;
+    order: 1;
+  }
 }
 
-.promo-photo--catalog::before {
-  content: "";
-  position: absolute;
-  top: 86px;
-  left: -30px;
-  background: $color-main url("../img/diagonal.svg");
-  z-index: 10;
+@media (min-width: $desktop-width) {
+  .promo-photo__img {
+    width: 430px;
+    height: 517px;
+  }
 }
 
-.promo-photo--catalog::after {
-  bottom: 86px;
-  right: -30px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
+// .promo-photo--catalog {
+// position: relative;
+// margin-right: 270px;
+// }
+
+// .promo-photo--catalog::before {
+// content: "";
+// position: absolute;
+// top: 86px;
+// left: -30px;
+// background: $color-main url("../img/diagonal.svg");
+// z-index: 10;
+// }
+
+// .promo-photo--catalog::after {
+// bottom: 86px;
+// right: -30px;
+// transform: matrix(-1, 0, 0, 1, 0, 0);
+// }

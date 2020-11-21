@@ -1,7 +1,14 @@
 .content-list {
   @include list-reset;
-  margin-left: 170px;
-  padding-top: 18px;
+  padding: 50px 0;
+}
+
+@media (min-width: $desktop-width) {
+  .content-list {
+    @include list-reset;
+    margin-left: 170px;
+    padding-top: 18px;
+  }
 }
 
 .content-list__slogan {
@@ -14,14 +21,25 @@
 .content-list__title {
   @include list-reset;
 
-  padding-bottom: 30px;
-  margin-left: -5px;
   font-family: "Anton", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 128px;
+  font-size: 86px;
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .content-list__title {
+    font-size: 98px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-list__title {
+    padding-bottom: 30px;
+    margin-left: -5px;
+    font-size: 128px;
+  }
+}
 
 .content-list__btn {
   display: block;
