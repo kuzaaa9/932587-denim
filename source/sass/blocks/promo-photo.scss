@@ -1,6 +1,7 @@
 .promo-photo {
   position: relative;
   order: -1;
+  display: block;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -8,59 +9,79 @@
   }
 }
 
-// .promo-photo::before,
-// .promo-photo::after {
-// content: "";
-// position: absolute;
-// width: 109px;
-// height: 80px;
-// background: $color-main url("../img/diagonal.svg");
-// z-index: 10;
-// }
-// .promo-photo::before {
-// top: -20px;
-// left: -20px;
-// transform: matrix(-1, 0, 0, 1, 0, 0);
-// }
+.promo-photo::before,
+.promo-photo::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 109px;
+  height: 80px;
+  background: $color-main url("../img/diagonal.svg");
+  z-index: 10;
+}
 
-// .promo-photo::after {
-// bottom: 0px;
-// right: 0px;
-// }
+.promo-photo::before {
+  top: 0;
+  left: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
 
-// @media (min-width: $tablet-width) {
-// .promo-photo::before,
-// .promo-photo::after {
-// width: 141px;
-// height: 104px;
-// }
-//}
+.promo-photo::after {
+  bottom: 0;
+  right: 0;
+  margin-bottom: -20px;
+  margin-right: -20px;
+}
 
-// @media (min-width: $desktop-width) {
-// .promo-photo::before,
-// .promo-photo::after {
-// width: 232px;
-// height: 176px;
-// }
-// }
+@media (min-width: $tablet-width) {
+  .promo-photo::before,
+  .promo-photo::after {
+    width: 141px;
+    height: 104px;
+  }
+}
 
-// @media (min-width: $tablet-width){
-// .promo-photo::before {
-// top:-30px;
-// left: -30px;
-// }
-// }
+@media (min-width: $tablet-width) {
+  .promo-photo::before {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
 
-// @media (min-width: $tablet-width){
-// .promo-photo::before {
-// top: -50px;
-// left: -50px;
-// }
-// }
+@media (min-width: $desktop-width) {
+  .promo-photo::after {
+    margin-bottom: -30px;
+    margin-right: -30px;
+  }
+}
 
-// / сделана замена фото на 3 медиазапросах
+@media (min-width: $desktop-width) {
+  .promo-photo::before,
+  .promo-photo::after {
+    width: 232px;
+    height: 176px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-photo::before {
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-photo::after {
+    margin-bottom: -50px;
+    margin-right: -50px;
+  }
+}
+
 .promo-photo__img {
   position: relative;
+  display: block;
   width: 202px;
   height: 249px;
   z-index: 1000;
