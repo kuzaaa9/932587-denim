@@ -1,22 +1,27 @@
 // / Почему такая величина? У тебя ширина контейнера 1170 на большом экране(или 1200 и паддинги с обоих сторон).
 // Дальше открой файл с переменными.
 .container {
-  width: 320px;
+  min-width: 290px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 
   @include text-main;
   background-color: $color-background;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 768px;
+    min: 678px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1366px;
+    width: 1170px;
+    padding-left: 98px;
+    padding-right: 98px;
   }
 }

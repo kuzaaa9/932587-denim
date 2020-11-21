@@ -6,6 +6,11 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 170px;
   }
 }
 
@@ -50,7 +55,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .promo-photo::after {
     margin-bottom: -30px;
     margin-right: -30px;

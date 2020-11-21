@@ -4,61 +4,75 @@
 }
 
 .header__nav {
-  padding: 0 15px;
+  align-items: center;
 }
 
-@media (min-width: $tablet-width) {
-  .header__nav {
-    padding: 0 45px;
+.header__wrapp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 290px;
+  padding: 100px 0 0 0;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 678px;
+    padding: 83px 0 125px 0;
+    align-items: flex-end;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .header__nav {
-    padding: 0 98px;
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+    padding: 50px 0;
     align-items: center;
   }
 }
 
-.header__wrapp {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 100px 0 50px 0;
-  align-items: center;
-}
+.header__wrapp-bottom {
+  display: none;
 
-@media (min-width: $tablet-width) {
-  .header__wrapp {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 45px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 83px 0 125px 0;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .header__wrapp {
-    padding: 50px 0;
-  }
-}
+// @media (min-width: $tablet-width) {
+// .header__social {
+// padding-right: 45px;
+// }
+// }
 
-.header__wrapp--catalog {
-  height: 260px;
-}
+// @media (min-width: $desktop-width){
+// .header__social {
+// padding-right: 98px;
+// }
+// }
 
-.header__social {
-  position: absolute;
-  right: 45px;
-  bottom: 50px;
-}
-
-.header__slider {
-  position: absolute;
-  left: 45px;
-  bottom: 50px;
-}
+// .header__slider {
+// left: 45px;
+// bottom: 50px;
+// }
 // @media (min-width: $tablet-width){
 // .header__slider {
 // bottom: 45px;
+// }
+// .header__wrapp--catalog {
+// height: 260px;
 // }
