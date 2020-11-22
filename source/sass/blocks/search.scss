@@ -12,32 +12,26 @@
 }
 
 .search__item {
-  padding-left: 25px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 35px;
   }
 }
 
-.search__button {
-  padding: 0;
-  border: none;
-  color: inherit;
-  background-color: inherit;
+@media (min-width: $desktop-width) {
+  .search__item:nth-child(2) {
+    order: -1;
+  }
 }
 
-
-// .search--row {
-// top: 0;
-// display: flex;
-// justify-content: space-between;
-// }
-
-// .search__item--row {
-// padding-bottom: 0;
-// }
+.search__button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}

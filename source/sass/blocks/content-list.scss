@@ -1,19 +1,16 @@
 .content-list {
   @include list-reset;
-  padding: 50px 0;
-}
+  padding: 45px 0 50px 0;
 
-@media (min-width: $tablet-width) {
-  .content-list {
-    padding: 0 0 0 84px;
-  }
-}
+  @media (min-width: $tablet-width) {
+      padding: 0 0 0 84px;
+    }
 
-@media (min-width: $desktop-width) {
-  .content-list {
-    padding-left: 165px;
+    @media (min-width: $desktop-width) {
+      padding-top: 19px;
+      padding-left: 165px;
+    }
   }
-}
 
 .content-list__slogan {
   @include list-reset;
@@ -24,25 +21,25 @@
 
 .content-list__title {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 26px;
 
   @include list-reset;
   font-family: "Anton", "Arial", sans-serif;
   font-weight: 400;
   font-size: 86px;
-  line-height: 126px;
+  line-height: 100px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 37px;
+    padding-bottom: 40px;
     font-size: 98px;
-    line-height: 144px;
+    line-height: 122px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     font-size: 128px;
-    line-height: 188px;
+    line-height: 136px;
   }
 }
 

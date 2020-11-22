@@ -1,6 +1,9 @@
 .btn-block {
   display: block;
   box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: inherit;
 
   @include text-second;
 

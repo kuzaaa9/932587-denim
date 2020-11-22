@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  // align-items: center;
 
   @include list-reset;
   @include text-second;
@@ -21,7 +21,8 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
-    padding-bottom: 35px;
+    padding-bottom: 28px;
+    align-items: flex-end;
   }
 }
 
