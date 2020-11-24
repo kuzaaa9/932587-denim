@@ -3,6 +3,7 @@
   top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 57px;
   box-sizing: border-box;
@@ -21,41 +22,56 @@
   }
 }
 
-// .mein-nav__toggle {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // margin-top: 32px;
-  // margin-left: 12px;
-  // width: 20px;
-  // height: 10px;
-  // outline: none;
-  // cursor: pointer;
-  // background-color: transparent;
+.main-nav--page-inner {
+  padding-top: 0;
 
-  // @media (min-width: $tablet-width) {
-    // display: none;
-  // }
-// }
+  @media (min-width: $tablet-width) {
+    padding-top: 108px;
+  }
 
-// .main-nav--closed .main-nav__toggle::before {
-  // content: "";
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 27px;
-  // height: 4px;
-  // margin-top: 13px;
-  // background-color: rgba(21, 28, 34, 1);
-  // border: 2px solid #151C22;
-  // box-shadow: 0 2px 0 0 rgba(21, 28, 34, 1), 0 4px 0 0 rgba(21, 28, 34, 1);
-// }
+  @media (min-width: $desktop-width) {
+    padding-top: 113px;
+  }
+}
 
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 26px;
+  margin-left: 0;
+  width: 20px;
+  height: 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
+.main-nav--closed .main-nav__toggle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+}
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #151c22;
+  box-shadow: 0 4px 0 0 #151c22, 0 8px 0 0 #151c22;
+}
 
-
-// .main-nav--row {
-// justify-content: space-between;
+// / В примере вид не изадан. Почему -то перестали работать ссылки на первой странице
+// .main-nav--closed .main-nav__toggle::after {
 // }

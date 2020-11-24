@@ -90,39 +90,32 @@
   width: 202px;
   height: 249px;
   z-index: 1000;
-}
 
-@media (min-width: $tablet-width) {
-  .promo-photo__img {
+  @media (min-width: $tablet-width) {
     width: 264px;
     height: 319px;
     order: 1;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .promo-photo__img {
+  @media (min-width: $desktop-width) {
     width: 430px;
     height: 517px;
   }
 }
 
-// .promo-photo--catalog {
-// position: relative;
-// margin-right: 270px;
-// }
+.promo-photo__img--inner {
+  position: relative;
+  display: none;
+  z-index: 1000;
 
-// .promo-photo--catalog::before {
-// content: "";
-// position: absolute;
-// top: 86px;
-// left: -30px;
-// background: $color-main url("../img/diagonal.svg");
-// z-index: 10;
-// }
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 294px;
+    height: 260px;
+    order: 1;
+  }
 
-// .promo-photo--catalog::after {
-// bottom: 86px;
-// right: -30px;
-// transform: matrix(-1, 0, 0, 1, 0, 0);
-// }
+  @media (min-width: $desktop-width) {
+    width: 299px;
+  }
+}

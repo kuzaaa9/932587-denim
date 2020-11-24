@@ -1,14 +1,14 @@
-.header {
+.header-inner {
   position: relative;
   background-color: $color-main;
   margin: 0 auto;
 }
 
-.header__nav {
+.header-inner__nav {
   align-items: center;
 }
 
-.header__wrapp-top {
+.header-inner__wrapp-top {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 678px;
-    padding: 83px 0 125px 0;
+    padding: 75px 0 105px 0;
     align-items: flex-end;
   }
 
@@ -33,7 +33,7 @@
   }
 }
 
-.header__wrapp-bottom {
+.header-inner__wrapp-bottom {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -54,7 +54,7 @@
   }
 }
 
-.header__wrapp-top--hidden {
+.header-inner__wrapp-top--hidden {
   display: none;
 
   @media (min-width: $tablet-width) {

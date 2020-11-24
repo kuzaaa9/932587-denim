@@ -3,14 +3,14 @@
   padding: 45px 0 50px 0;
 
   @media (min-width: $tablet-width) {
-      padding: 0 0 0 84px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 19px;
-      padding-left: 165px;
-    }
+    padding: 0 0 0 84px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
+    padding-left: 165px;
+  }
+}
 
 .content-list__slogan {
   @include list-reset;

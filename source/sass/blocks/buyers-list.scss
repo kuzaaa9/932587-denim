@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // align-items: center;
 
   @include list-reset;
   @include text-second;
@@ -11,6 +10,7 @@
     flex-direction: column;
   }
 }
+
 
 .buyers-list__item {
   padding-right: 25px;
@@ -30,18 +30,6 @@
   color: $color-main-second;
 }
 
-
-// .buyers-list--row {
-// top: 0;
-// display: flex;
-// flex-wrap: wrap;
-// }
-
-// .buyers-list__item--row {
-// padding-bottom: 0;
-// padding-right: 35px;
-// }
-// от этот медиазапрос не применяется, потому что в хтмл у тебя у списка с классом buyers-list добавлен модификатор buyers-list--row (см. строка 36),
-// стили для этого модификатора написаны в scss ниже стилей .buyers-list, поэтому стили модификатора перебивают стили .buyers-list  НА ВСЕХ ЭКРАНАХ
-// в хтмл этот класс употребляется с модификатором, стили для модификатора написаны ниже стилей основного блока (строка 45),
-// соответственно, стили модификатора перебивают стили основного блока для ВСЕХ экранов
+.buyers-list--hidden {
+  visibility: hidden;
+}
