@@ -1,22 +1,40 @@
-.content-block__slogan {
+.content-block {
   @include list-reset;
-
-  font-weight: 400;
-  color: $text-secondary-color;
-}
-
-.content-block__title {
-  display: block;
-  padding-bottom: 26px;
-
-  @include list-reset;
-  @include text-title ;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 0px;
+    padding-left: 200px;
+  }
+}
+
+.content-block__slogan {
+  @include list-reset;
+
+  font-weight: 500;
+  color: $text-secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .content-block__title {
+    display: block;
+
+    @include list-reset;
+    @include text-title;
+
+    padding-bottom: 0;
+    font-size: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    font-size: 32px;
+    line-height: 125%;
   }
 }

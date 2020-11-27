@@ -10,26 +10,35 @@
 
 .header-inner__wrapp-top {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   box-sizing: border-box;
   width: 290px;
-  padding: 100px 0 0 0;
+  padding: 0;
   align-items: center;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 678px;
-    padding: 75px 0 105px 0;
-    align-items: flex-end;
+    padding: 0;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     width: 1170px;
-    padding: 50px 0;
     align-items: center;
+    box-sizing: border-box;
+  }
+}
+
+.header__wrapp-top--hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
@@ -51,13 +60,5 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 15px;
-  }
-}
-
-.header-inner__wrapp-top--hidden {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
   }
 }

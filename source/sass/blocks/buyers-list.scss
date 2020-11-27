@@ -1,7 +1,9 @@
+// Главная страница
 .buyers-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 
   @include list-reset;
   @include text-second;
@@ -11,7 +13,6 @@
   }
 }
 
-
 .buyers-list__item {
   padding-right: 25px;
 
@@ -20,9 +21,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 0;
-    padding-bottom: 28px;
-    align-items: flex-end;
+    padding-right: 35px;
+    padding-bottom: 35px;
   }
 }
 
@@ -30,6 +30,21 @@
   color: $color-main-second;
 }
 
-.buyers-list--hidden {
-  visibility: hidden;
+// Внутренние стр.
+.main-nav--page-inner {
+  .buyers-list {
+    visibility: hidden;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      visibility: visible;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+      padding-right: 35px;
+    }
+  }
 }

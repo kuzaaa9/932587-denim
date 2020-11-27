@@ -1,11 +1,24 @@
 .header {
   position: relative;
-  background-color: $color-main;
   margin: 0 auto;
+  background-color: $color-main;
 }
 
 .header__nav {
   align-items: center;
+}
+
+.header__wrapp-total {
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 90px;
+  }
 }
 
 .header__wrapp-top {
@@ -34,30 +47,23 @@
 }
 
 .header__wrapp-bottom {
+  position: absolute;
   display: none;
+  background-color: inherit;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    bottom: 0;
+    right: 0;
     width: 100%;
     align-items: flex-end;
-    padding: 0;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 15px;
-  }
-}
-
-.header__wrapp-top--hidden {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
+    padding-bottom: 45px;
   }
 }

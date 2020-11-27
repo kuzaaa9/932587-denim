@@ -1,5 +1,6 @@
 .search {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 
@@ -34,4 +35,17 @@
   border: none;
   outline: none;
   background-color: inherit;
+}
+
+.main-nav--page-inner {
+  .search {
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 35px;
+      padding-bottom: 0;
+    }
+  }
 }
