@@ -2,9 +2,10 @@
 // Дальше открой файл с переменными.
 .container {
   margin: 0 auto;
-  width: 290px;
-  padding-left: 15px;
-  padding-right: 15px;
+  min-width: 320px;
+  max-width: 1170px;
+  padding: 0 15px;
+  box-sizing: border-box;
 
   @include text-main;
   background-color: $color-background;
@@ -12,7 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 678px;
+    // width: 768px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -21,7 +22,8 @@
 @media (min-width: $desktop-width) {
   .container {
     width: 1170px;
-    padding-left: 98px;
-    padding-right: 98px;
+    padding: 0;
+    // padding-left: 98px;
+    // padding-right: 98px;
   }
 }

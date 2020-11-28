@@ -1,20 +1,29 @@
 .main-nav {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   align-content: center;
-  width: 100%;
+  width: 320px;
   min-height: 57px;
+  padding-top: 24px;
   box-sizing: border-box;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-top: 31px;
     min-height: 67px;
   }
 
   @media (min-width: $desktop-width) {
+    z-index: 1000;
     position: absolute;
-    top: 117px;
+    top: 115px;
+    left: 50%;
+    width: 1170px;
+    margin-left: -585px;
+    padding-top: 0;
   }
 }
 

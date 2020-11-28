@@ -1,12 +1,60 @@
 .card {
   @include list-reset;
+  color: $color-main-second;
+}
+
+.card__link {
+  color: $color-main-second;
+  margin: 0;
+}
+
+.card__img {
+  display: block;
+  width: 130px;
+  height: 160px;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 349px;
+    padding-bottom: 22px;
+
+    @media (min-width: $desktop-width) {
+      width: 270px;
+      height: 349px;
+    }
+  }
+}
+
+.card__figure {
+  margin: 0;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+  }
 }
 
 .card__title {
-  @include text-main;
+  @include text-second;
+  margin: 0;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    @include text-main;
+    padding-bottom: 8px;
+  }
 }
 
 .card__price {
-  @include text-second;
+  margin: 0;
+  font-size: 14px;
+  line-height: auto;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    @include text-second;
+    font-weight: 700;
+    word-spacing: 3px;
+  }
 }

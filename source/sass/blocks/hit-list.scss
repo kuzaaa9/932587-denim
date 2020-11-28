@@ -1,0 +1,55 @@
+.hit-list {
+  position: relative;
+  display: block;
+  padding-bottom: 60px;
+}
+
+.hit-list__title {
+  padding-bottom: 35px;
+  margin: 0;
+
+  @include text-title;
+  font-size: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
+    font-size: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 64px;
+    @include text-title;
+  }
+}
+
+.hit-list__group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include list-reset;
+  padding-bottom: 10px;
+}
+
+.hit-list__link {
+  position: relative;
+  display: block;
+
+  @include text-second ;
+  text-decoration: underline;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include text-main;
+    font-weight: 700;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+  }
+}

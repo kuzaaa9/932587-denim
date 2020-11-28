@@ -27,7 +27,7 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 290px;
-  padding: 100px 0 0 0;
+  padding: 42px 0 0 0;
   align-items: center;
   margin: 0 auto;
 
@@ -35,7 +35,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 678px;
-    padding: 83px 0 125px 0;
+    padding: 16px 0 125px 0;
     align-items: flex-end;
   }
 
@@ -60,10 +60,14 @@
     right: 0;
     width: 100%;
     align-items: flex-end;
-    padding-bottom: 45px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 45px;
+    left: 50%;
+    width: 1170px;
+    margin-left: -585px;
+    padding-bottom: 23px;
+    align-items: center;
   }
 }

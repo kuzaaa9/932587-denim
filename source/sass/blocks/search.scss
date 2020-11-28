@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    align-items: baseline;
   }
 }
 
@@ -41,8 +42,11 @@
   .search {
     @media (min-width: $desktop-width) {
       flex-direction: row;
+      padding-bottom: 0;
     }
+  }
 
+  .search__item {
     @media (min-width: $desktop-width) {
       padding-left: 35px;
       padding-bottom: 0;
