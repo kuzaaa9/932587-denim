@@ -1,5 +1,7 @@
 .index-main {
+  display: block;
   padding: 55px 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 97px 0;
@@ -8,4 +10,8 @@
   @media (min-width: $desktop-width) {
     padding: 122px 0;
   }
+}
+
+.index-main__season {
+  margin: 0 auto;
 }

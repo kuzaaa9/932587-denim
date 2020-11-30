@@ -1,0 +1,116 @@
+.season-banner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    height: 287px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 370px;
+    padding: 0 90px;
+  }
+}
+
+.season-banner__wrapp {
+  padding: 15px 15px 0 14px;
+  box-sizing: border-box;
+  background: url("../img/diagonal.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding: 20px 20px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 470px;
+    padding: 31px 70px 31px 0;
+  }
+}
+
+.season-banner__content {
+  width: 290px;
+  height: 211px;
+  padding: 40px 35px;
+  box-sizing: border-box;
+  background: $color-main;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 304px;
+    height: 247px;
+    padding: 50px 0 0 50px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    height: 308px;
+    padding: 65px 0 70px 70px;
+  }
+}
+
+.season-banner__slogan {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
+.season-banner__title {
+  margin: 0;
+
+  @include text-title;
+  font-size: 26px;
+  padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    @include text-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
+  }
+}
+
+
+.season-banner__btn {
+  display: block;
+  width: 148px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    padding: 23px 0;
+  }
+}
+
+.season-banner__img {
+  display: block;
+  width: 320px;
+  height: 226px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 354px;
+    height: 287px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    height: 370px;
+  }
+}

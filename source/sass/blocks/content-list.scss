@@ -13,27 +13,28 @@
 }
 
 .content-list__slogan {
-  @include list-reset;
-
+  margin: 0;
   font-weight: 400;
   color: $text-secondary-color;
 }
 
 .content-list__title {
-  display: block;
-  padding-bottom: 28px;
+  margin: 0;
+  padding-bottom: 24px;
+  text-align: center;
 
   @include list-reset;
   font-family: "Anton", "Arial", sans-serif;
   font-weight: 400;
   font-size: 86px;
-  line-height: 100px;
+  line-height: 104px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
     font-size: 98px;
     line-height: 122px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,11 +46,14 @@
 
 .content-list__btn {
   display: block;
-  width: 207px;
-  padding: 23px 17px 23px 17px;
+  width: 204px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 22px 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 219px;
-    padding: 23px 24px 23px 24px;
+    padding: 23px 0;
   }
 }

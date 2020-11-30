@@ -3,10 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-content: center;
   width: 320px;
   min-height: 57px;
-  padding-top: 24px;
+  padding-top: 13px;
   box-sizing: border-box;
   background-color: transparent;
 
@@ -19,6 +18,7 @@
   @media (min-width: $desktop-width) {
     z-index: 1000;
     position: absolute;
+    align-items: start;
     top: 115px;
     left: 50%;
     width: 1170px;

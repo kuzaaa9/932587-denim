@@ -1,11 +1,9 @@
 .btn-block {
   display: block;
-  box-sizing: border-box;
   border: none;
   outline: none;
 
   @include text-second;
-
   font-weight: bold;
   color: $color-background;
   background-color: $color-main-second;

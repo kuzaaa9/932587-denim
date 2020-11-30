@@ -12,7 +12,7 @@
   display: block;
   width: 130px;
   height: 160px;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -31,7 +31,7 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 48px;
+    padding-bottom: 45px;
   }
 }
 
@@ -55,6 +55,5 @@
   @media (min-width: $tablet-width) {
     @include text-second;
     font-weight: 700;
-    word-spacing: 3px;
   }
 }
