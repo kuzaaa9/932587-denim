@@ -1,15 +1,21 @@
 .nav-service__list {
   display: flex;
-  justify-content: space-between;
-  padding: 27px 0 29px;
-
   @include list-reset;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
 }
 
 .nav-service__item {
-  padding-right: 35px;
+  width: 50%;
+  padding-bottom: 25px;
 }
 
 .nav-service__link {
   color: $color-background;
+}
+
+.nav-service__item--position {
+  width: 100%;
+  padding-bottom: 23px;
+  padding-left: 150px;
 }

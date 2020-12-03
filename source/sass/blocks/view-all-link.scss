@@ -1,0 +1,15 @@
+.view-all-link {
+  @include text-second;
+
+  text-decoration: underline;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-main;
+    font-weight: 700;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+  }
+}

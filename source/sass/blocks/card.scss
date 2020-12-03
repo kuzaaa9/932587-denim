@@ -8,6 +8,15 @@
   margin: 0;
 }
 
+.card__figure {
+  margin: 0;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+}
+
 .card__img {
   display: block;
   width: 130px;
@@ -18,20 +27,11 @@
     width: 324px;
     height: 349px;
     padding-bottom: 22px;
-
-    @media (min-width: $desktop-width) {
-      width: 270px;
-      height: 349px;
-    }
   }
-}
 
-.card__figure {
-  margin: 0;
-  padding-bottom: 26px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 45px;
+  @media (min-width: $desktop-width) {
+    width: 270px;
+    height: 349px;
   }
 }
 
@@ -55,5 +55,76 @@
   @media (min-width: $tablet-width) {
     @include text-second;
     font-weight: 700;
+  }
+}
+
+//Для секции- Shop by category
+.categories__list {
+  .card__figure {
+    padding: 0;
+  }
+
+  .card__figcaption {
+    padding: 0;
+    margin: 0;
+  }
+
+  .card__img {
+    padding: 0;
+  }
+
+  .card__title {
+    // padding-top: 11px;
+    padding-bottom: 0;
+    padding-top: 22px;
+    line-height: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 32px;
+    }
+  }
+}
+
+.categories__list {
+  .card--min {
+    width: 130px;
+    height: 126px;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      height: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 270px;
+      height: 290px;
+    }
+  }
+}
+
+.categories__list {
+  .card--position {
+    padding-top: 34px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 59px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+      padding-top: 0;
+    }
+  }
+}
+
+
+.card__item--order {
+  @media (min-width: $desktop-width) {
+    order: 1;
   }
 }

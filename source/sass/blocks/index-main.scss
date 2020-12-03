@@ -1,14 +1,14 @@
 .index-main {
   display: block;
-  padding: 55px 0;
+  padding: 56px 0 93px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 97px 0;
+    padding: 97px 0 107px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 122px 0;
+    padding: 122px 0 135px;
   }
 }
 

@@ -11,19 +11,21 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    justify-content: center;
   }
+}
+
+.social-wrapp {
+  @include list-reset;
+  justify-content: flex-start;
+  padding-right: 33px;
 }
 
 @media (min-width: $tablet-width) {
   .social__item {
-    padding-left: 35px;
-    align-items: center;
+    padding-left: 31px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .social__item {
+  @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-bottom: 25px;
   }

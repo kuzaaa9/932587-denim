@@ -4,7 +4,7 @@
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,21 +45,14 @@
   position: relative;
   display: block;
 
-  @include text-second ;
-  text-decoration: underline;
-  text-align: center;
-
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
     right: 0;
     padding-right: 45px;
-
-    @include text-main;
-    font-weight: 700;
   }
 
   @media (min-width: $desktop-width) {
-    font-weight: 500;
+    padding-right: 0;
   }
 }
