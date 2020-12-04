@@ -74,23 +74,19 @@
   }
 
   .card__title {
-    // padding-top: 11px;
     padding-bottom: 0;
     padding-top: 22px;
     line-height: 0;
 
     @media (min-width: $tablet-width) {
       padding-top: 30px;
-
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 32px;
     }
   }
-}
 
-.categories__list {
   .card--min {
     width: 130px;
     height: 126px;
@@ -105,9 +101,7 @@
       height: 290px;
     }
   }
-}
 
-.categories__list {
   .card--position {
     padding-top: 34px;
 
@@ -116,12 +110,10 @@
     }
 
     @media (min-width: $desktop-width) {
-
       padding-top: 0;
     }
   }
 }
-
 
 .card__item--order {
   @media (min-width: $desktop-width) {

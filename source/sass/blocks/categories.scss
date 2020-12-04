@@ -30,14 +30,13 @@
   flex-wrap: wrap;
 
   @include list-reset;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
     padding: 0;
   }
 }
-
 
 .categories__link {
   position: relative;
@@ -50,7 +49,7 @@
     padding-right: 45px;
   }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-right: 0;
   }
 }
