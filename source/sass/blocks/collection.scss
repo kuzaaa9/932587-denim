@@ -1,0 +1,17 @@
+.collection__list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: auto;
+  color: $text-secondary-color;
+}
+
+.collection__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.collection__input:checked + .collection__label {
+  color: $color-main-second;
+}

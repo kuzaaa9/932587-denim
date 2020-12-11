@@ -1,0 +1,46 @@
+.price {
+  box-sizing: border-box;
+  padding: 0;
+  bottom: 0;
+}
+
+.price__range {
+  width: 290px;
+  height: 2px;
+  color: $color-main;
+  outline: none;
+}
+
+.price__values {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.price__data-min,
+.price__data-max {
+  position: relative;
+  width: 50%;
+}
+
+.price__data-max {
+  padding-left: 100px;
+}
+
+.price__input {
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700px;
+  padding: 0;
+}
+
+.price__label {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700px;
+  padding: 0;
+  background-color: green;
+}

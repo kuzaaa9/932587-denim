@@ -60,68 +60,106 @@
       </div>
     </div>
   </header>
-  <main class="container__main">
-    <section class="catalog-main__filter">
-      <h2 class="visually-hidden">Выпадающий фильтр по параметрам</h2>
-      <div class="catalog-main__wrapp filter-group">
-        <p class="filter-group__heading">Filter by</p>
-        <button class="filter-group__button-on filter-group__button-on--closed-js">
-          <img class="filter-group__img" src="img/on.jpg" width="16" height="8" alt="Кнопка закрыто">
+  <main class="catalog-main">
+    <section class="filters">
+      <div class="filters__info">Woman/Jackets</div>
+      <h2 class="visually-hidden">Выпадающие фильтры по параметрам</h2>
+      <div class="filters__nav filters__nav--closed ">
+        <button class="filters__btn"type="button">
+          <p class="filters__title">Filter by</p>
         </button>
-      </div>
-      <form  class="catalog-main__form form-group" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-group__drop">
-          <fieldset class="form-group__price price">
-            <legend class="price__legend">Price</legend>
-            <button class="button-on button-on--closed-js">
-              <img class="button-on__img" src="img/on.jpg" width="16" height="8" alt="Кнопка закрыто">
-            </button>
-            <input type="range" id="dayscount" name="dayscount" min="40" max="240" step="1">240$
-          </fieldset>
-          <fieldset class="form-group__color color">
-            <legend class="color__label">Color</legend>
-            <button class="button-on button-on--closed-js">
-              <img class="button-on__img" src="img/on.jpg" width="16" height="8" alt="Кнопка закрыто">
-            </button>
-            <input class="color__input" type="checkbox" name="color" id="color-1" checked>
-            <input class="color__input" type="checkbox" name="color" id="color-2">
-            <input class="color__input" type="checkbox" name="color" id="color-3">
-            <input class="color__input" type="checkbox" name="color" id="color-4">
-            <input class="color__input" type="checkbox" name="color" id="color-5">
-            <input class="color__input" type="checkbox" name="color" id="color-6">
-          </fieldset>
-          <fieldset class="form-group__collection collection">
-            <legend  class="collection__legend">Collection</legend>
-            <button class="collection__button button-on button-on--closed-js">
-              <img class="collection__img" src="img/on.jpg" width="16" height="8" alt="Кнопка закрыто">
-            </button>
-            <div class="collection__list subcollection subcollection--closed-js">
-              <div class="subcollection__item">
-                <label class="subcollection__label" for="cat-1">Casual</label>
-                <input class="subcollection__input" type="checkbox" name="cat" id="cat-1">
-              </div>
-              <div class="subcollection__item">
-                <label class="subcollection__label" for="cat-2">Petite</label>
-                <input class="subcollection__input" type="checkbox" name="cat" id="cat-2">
-              </div>
-              <div class="subcollection__item">
-                <label class="subcollection__label" for="cat-3">Classic</label>
-                <input class="subcollection__input" type="checkbox" name="cat" id="cat-3">
-              </div>
-              <div class="subcollection__item">
-                <label class="subcollection__label" for="cat-3">Soulluxe</label>
-                <input class="subcollection__input" type="checkbox" name="cat" id="cat-4">
-              </div>
+        <form  class="form-group"action="https://echo.htmlacademy.ru"method="post">
+          <div class="form-group__filter">
+            <div class="form-group__btn-block-nav">
+              <button class="form-group__btn">
+                <p class="form-group__item-btn">Clear all</p>
+              </button>
+              <button class="form-group__btn">
+                <h3 class="form-group__item-btn form-group--title">Filters</h3>
+              </button>
+              <button class="form-group__btn">
+                <p class="form-group__item-btn">Close</p>
+              </button>
             </div>
-          </fieldset>
-          <button class="form-group__button form-group__button--apply btn-block">Apply(9 products)
-          </button>
-          <button class="form-group__button form-group__button--clear">Clear all
-          </button>
-        </div>
-      </form>
+            <ul class="form-group__list">
+              <li class="form-group__item form-group__item--closed">
+                <p class="form-group__item-title">Price</p>
+                <div class="form-group__item-content price">
+                  <input class="price__range"type="range"id="dayscount"name="dayscount"min="1"max="500"step="1">
+                  <div class="price__values">
+                    <div class="price__data-min">
+                      <input class="price__input"type="text"name="data-min"id="data-min"value="$ 0">
+                      <!-- <label class="price__label"for="data-min"></label> -->
+                    </div>
+                    <div class="price__data-max">
+                      <input class="price__input"type="text"name="data-data-max"id="data-max"value="$ 1000 ">
+                      <!-- <label class="price__label"for="data-data-max"></label> -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form-group__item form-group__item--closed">
+                <p class="form-group__item-title">Color</p>
+                <div class="form-group__item-content color">
+                  <div class="color__list">
+                    <div class="color__item">
+                      <input class="color__input"type="checkbox"name="color"id="color-1"checked>
+                      <label class="color__label"for="color-1"> </label>
+                    </div>
+                    <div class="color__item">
+                      <input class="color__input"type="checkbox"name="color"id="color-2"checked>
+                      <label class="color__label"for="color-2"> </label>
+                    </div>
+                    <div class="color__item">
+                      <input class="color__input"type="checkbox"name="color"id="color-3"checked>
+                      <label class="color__label"for="color-3"> </label>
+                    </div>
+                    <div class="color__item">
+                      <input class="color__input"type="checkbox"name="color"id="color-4"checked>
+                      <label class="color__label"for="color-4"> </label>
+                    </div>
+                    <div class="color__item">
+                      <input class="color__input"type="checkbox"name="color"id="color-5"checked>
+                      <label class="color__label"for="color-5"> </label>
+                    </div>
+                    <div class="color__item">
+                      <input class="color__input"type="checkbox"name="color"id="color-6"checked>
+                      <label class="color__label"for="color-6"> </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form-group__item form-group__item--closed">
+                <p class="form-group__item-title">Collection</p>
+                <div class="form-group__item-content collection">
+                  <div class="collection__list">
+                    <div class="collection__item">
+                      <input class="collection__input"type="checkbox"name="cat"id="cat-1">
+                      <label class="collection__label"for="cat-1">Casual</label>
+                    </div>
+                    <div class="collection__item-content">
+                      <input class="collection__input"type="checkbox"name="cat"id="cat-2">
+                      <label class="collection__label"for="cat-2">Petite</label>
+                    </div>
+                    <div class="collection__item">
+                      <input class="collection__input"type="checkbox"name="cat"id="cat-3">
+                      <label class="collection__label"for="cat-3">Classic</label>
+                    </div>
+                    <div class="collection__item">
+                      <input class="collection__input"type="checkbox"name="cat"id="cat-4">
+                      <label class="collection__label"for="cat-3">Soulluxe</label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="form-group__button-apply btn-block">Apply(9 products)
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
-    <section class="catalog-main__result result">
+    <section class="catalog-main__result result container">
       <h2 class="visually-hidden">Итог фильтрации по категориям</h2>
       <ul class="result__list card">
         <li class="card__item">
