@@ -2,6 +2,19 @@
   box-sizing: border-box;
   padding: 0;
   bottom: 0;
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 176px;
+  }
+}
+
+.form-group__item--closed .price {
+  display: none;
+}
+
+.form-group__item--opened .price {
+  display: block;
 }
 
 .price__range {
@@ -9,12 +22,15 @@
   height: 2px;
   color: $color-main;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    width: 176px;
+  }
 }
 
 .price__values {
   display: flex;
   justify-content: space-between;
-  width: 290px;
 }
 
 .price__data-min,
@@ -25,6 +41,10 @@
 
 .price__data-max {
   padding-left: 100px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
 }
 
 .price__input {

@@ -15,7 +15,7 @@
   <header class="header-inner">
     <a class="header-inner__logo logo" href="index.html">Nîmes
     </a>
-    <nav class="main-nav main-nav--page-inner main-nav--closed container">
+    <nav class="main-nav main-nav--page-inner container main-nav--closed ">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -74,11 +74,9 @@
               <button class="form-group__btn">
                 <p class="form-group__item-btn">Clear all</p>
               </button>
+              <h3 class="form-group__title">Filters</h3>
               <button class="form-group__btn">
-                <h3 class="form-group__item-btn form-group--title">Filters</h3>
-              </button>
-              <button class="form-group__btn">
-                <p class="form-group__item-btn">Close</p>
+                <p class="form-group__item-btn form-group__item-btn--close">Close</p>
               </button>
             </div>
             <ul class="form-group__list">
@@ -89,11 +87,9 @@
                   <div class="price__values">
                     <div class="price__data-min">
                       <input class="price__input"type="text"name="data-min"id="data-min"value="$ 0">
-                      <!-- <label class="price__label"for="data-min"></label> -->
                     </div>
                     <div class="price__data-max">
                       <input class="price__input"type="text"name="data-data-max"id="data-max"value="$ 1000 ">
-                      <!-- <label class="price__label"for="data-data-max"></label> -->
                     </div>
                   </div>
                 </div>
@@ -103,23 +99,23 @@
                 <div class="form-group__item-content color">
                   <div class="color__list">
                     <div class="color__item">
-                      <input class="color__input"type="checkbox"name="color"id="color-1"checked>
+                      <input class="color__input"type="checkbox"name="color" id="color-1"checked>
                       <label class="color__label"for="color-1"> </label>
                     </div>
                     <div class="color__item">
-                      <input class="color__input"type="checkbox"name="color"id="color-2"checked>
+                      <input class="color__input"type="checkbox"name="color" id="color-2"checked>
                       <label class="color__label"for="color-2"> </label>
                     </div>
                     <div class="color__item">
-                      <input class="color__input"type="checkbox"name="color"id="color-3"checked>
+                      <input class="color__input"type="checkbox"name="color"  id="color-3"checked>
                       <label class="color__label"for="color-3"> </label>
                     </div>
                     <div class="color__item">
-                      <input class="color__input"type="checkbox"name="color"id="color-4"checked>
+                      <input class="color__input"type="checkbox"name="color" id="color-4"checked>
                       <label class="color__label"for="color-4"> </label>
                     </div>
                     <div class="color__item">
-                      <input class="color__input"type="checkbox"name="color"id="color-5"checked>
+                      <input class="color__input"type="checkbox"name="color" id="color-5"checked>
                       <label class="color__label"for="color-5"> </label>
                     </div>
                     <div class="color__item">
@@ -132,24 +128,24 @@
               <li class="form-group__item form-group__item--closed">
                 <p class="form-group__item-title">Collection</p>
                 <div class="form-group__item-content collection">
-                  <div class="collection__list">
-                    <div class="collection__item">
-                      <input class="collection__input"type="checkbox"name="cat"id="cat-1">
+                  <ul class="collection__list">
+                    <li class="collection__item">
+                      <input class="collection__input"type="checkbox"name="cat" id="cat-1">
                       <label class="collection__label"for="cat-1">Casual</label>
-                    </div>
-                    <div class="collection__item-content">
-                      <input class="collection__input"type="checkbox"name="cat"id="cat-2">
+                    </li>
+                    <li class="collection__item">
+                      <input class="collection__input"type="checkbox"name="cat" id="cat-2">
                       <label class="collection__label"for="cat-2">Petite</label>
-                    </div>
-                    <div class="collection__item">
-                      <input class="collection__input"type="checkbox"name="cat"id="cat-3">
+                    </li>
+                    <li class="collection__item">
+                      <input class="collection__input"type="checkbox"name="cat" id="cat-3">
                       <label class="collection__label"for="cat-3">Classic</label>
-                    </div>
-                    <div class="collection__item">
-                      <input class="collection__input"type="checkbox"name="cat"id="cat-4">
+                    </li>
+                    <li class="collection__item">
+                      <input class="collection__input"type="checkbox"name="cat" id="cat-4">
                       <label class="collection__label"for="cat-3">Soulluxe</label>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
@@ -159,13 +155,13 @@
         </form>
       </div>
     </section>
-    <section class="catalog-main__result result container">
+    <section class="catalog-main__result container result">
       <h2 class="visually-hidden">Итог фильтрации по категориям</h2>
       <ul class="result__list card">
-        <li class="card__item">
+        <li class="result__item card__item">
           <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img" src="img/photo-5-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 40">
+              <img class="result__img card__img" src="img/photo-5-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 40">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$ 40</p>
@@ -173,10 +169,10 @@
             </figure>
           </a>
         </li>
-        <li class="card__item">
+        <li class="result__item card__item">
           <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img" src="img/photo-6a-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 70">
+              <img class="result__img card__img" src="img/photo-6a-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 70">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$ 70</p>
@@ -184,10 +180,10 @@
             </figure>
           </a>
         </li>
-        <li class="card__item">
+        <li class="result__item card__item">
           <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img" src="img/photo-7a-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 60">
+              <img class="result__img card__img" src="img/photo-7a-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 60">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$ 60</p>
@@ -195,10 +191,10 @@
             </figure>
           </a>
         </li>
-        <li class="card__item">
+        <li class="result__item card__item">
           <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img" src="img/photo-8-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 50">
+              <img class="result__img card__img" src="img/photo-8-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 50">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$ 50</p>
@@ -206,10 +202,21 @@
             </figure>
           </a>
         </li>
+        <li class="result__item card__item">
+          <a class="card__link" href="product-card.html">
+            <figure class="card__figure">
+              <img class="result__img card__img" src="img/photo-13-desktop@1x.jpg" width="552" height="670" alt="Jacket $ 160">
+              <figcaption class="card__figcaption">
+                <p class="card__title">Jacket</p>
+                <p class="card__price">$ 160</p>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
         <li class="card__item">
           <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img" src="img/photo-9-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 40">
+              <img class="result__img card__img" src="img/photo-9-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 40">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$ 40</p>
@@ -220,7 +227,7 @@
         <li class="card__item">
           <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img" src="img/photo-10-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 110">
+              <img class="result__img card__img" src="img/photo-10-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 110">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$ 110</p>
@@ -231,7 +238,7 @@
         <li class="card__item">
           <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img" src="img/photo-11-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 35">
+              <img class="result__img card__img" src="img/photo-11-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 35">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$ 35</p>
@@ -239,10 +246,10 @@
             </figure>
           </a>
         </li>
-        <li class="card__item">
+        <li class="result__item card__item">
           <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img" src="img/photo-12-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 85">
+              <img class="result__img card__img" src="img/photo-12-desktop@1x.jpg" width="243" height="270" alt="Jacket $ 85">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$ 85</p>
@@ -250,17 +257,7 @@
             </figure>
           </a>
         </li>
-        <li class="card__item">
-          <a class="card__link" href="product-card.html">
-            <figure class="card__figure">
-              <img class="card__img" src="img/photo-13-desktop@1x.jpg" width="552" height="670" alt="Jacket $ 160">
-              <figcaption class="card__figcaption">
-                <p class="card__title">Jacket</p>
-                <p class="card__price">$ 160</p>
-              </figcaption>
-            </figure>
-          </a>
-        </li>
+
       </ul>
     </section>
     <section class="catalog-main__filter-showing showing">

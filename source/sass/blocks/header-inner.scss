@@ -1,7 +1,11 @@
 .header-inner {
   position: relative;
   background-color: $color-main;
-  margin: 0 auto;
+  margin: 0 auto 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 35px;
+  }
 }
 
 .header-inner__nav {

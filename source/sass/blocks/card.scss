@@ -86,37 +86,4 @@
       padding-top: 32px;
     }
   }
-
-  .card--min {
-    width: 130px;
-    height: 126px;
-
-    @media (min-width: $tablet-width) {
-      width: 324px;
-      height: 290px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 270px;
-      height: 290px;
-    }
-  }
-
-  .card--position {
-    padding-top: 34px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 59px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 0;
-    }
-  }
-}
-
-.card__item--order {
-  @media (min-width: $desktop-width) {
-    order: 1;
-  }
 }

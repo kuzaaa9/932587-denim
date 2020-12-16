@@ -53,3 +53,27 @@
     padding-right: 0;
   }
 }
+
+.categories__item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.categories__item:nth-child(2),
+.categories__item:nth-child(3) {
+  .categories__img {
+    width: 130px;
+    height: 126px;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      height: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 270px;
+      height: 290px;
+    }
+  }
+}

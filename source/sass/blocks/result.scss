@@ -1,0 +1,35 @@
+.result__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.result__img {
+  @media (min-width: $tablet-width) {
+    width: 206px;
+    height: 279px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 243px;
+    height: 270px;
+  }
+}
+
+.result__item:nth-child(5) {
+  .result__img {
+    width: 290px;
+    height: 442px;
+
+    @media (min-width: $tablet-width) {
+      width: 442px;
+      height: 672px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      height: 670px;
+    }
+  }
+}
