@@ -5,6 +5,14 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .product-photo__item:first-child {
