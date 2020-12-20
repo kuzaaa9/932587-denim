@@ -1,3 +1,57 @@
+.showing {
+  width: 177px;
+  margin: 0 auto;
+  padding: 20px 0 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 206px;
+    padding: 20px 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    padding: 20px 0 130px;
+  }
+}
+
+.showing__content {
+  margin: 0;
+  padding-bottom: 15px;
+
+  @include text-second;
+
+  @media (min-width: $tablet-width) {
+    @include text-main;
+    font-weight: 400;
+  }
+}
+
+.showing__scale {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.showing__bar {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.showing__toggle {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  border-bottom: 2px solid $color-main-second;
+}
+
 .showing__button {
-  padding: 20px 58px;
+  width: 100%;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0;
+  }
 }

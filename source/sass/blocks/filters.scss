@@ -3,6 +3,8 @@
   width: 320px;
   margin: 0 auto;
   padding-bottom: 40px;
+  z-index: 100;
+  background-color: $color-background;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -40,13 +42,13 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 290px;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 13px 15px 14px 15px;
   margin: 0 auto;
-  background-color: inherit;
   border: 2px solid #151c22;
   align-items: center;
+  background-color: inherit;
 }
 
 .filters__btn::after {

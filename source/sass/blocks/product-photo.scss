@@ -1,6 +1,7 @@
 .product-photo__list {
   @include list-reset;
 
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,10 +16,43 @@
   }
 }
 
+// Слайдер на мобилке
+.product-photo__img {
+  width: 244px;
+  height: 310px;
+}
+
+.product-photo__item::before,
+.product-photo__item::after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 18px;
+  height: 10px;
+  margin-top: -9px;
+  background-image: url("../img/on.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.product-photo__item::before {
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.product-photo__item::after {
+  left: 0;
+  transform: rotate(90deg);
+}
+
 .product-photo__item:first-child {
+  z-index: 5;
+
   .product-photo__img {
-    width: 244px;
-    height: 310px;
+    position: relative;
 
     @media (min-width: $tablet-width) {
       width: 324px;
@@ -34,9 +68,12 @@
 
 .product-photo__item:not(:first-child) {
   .product-photo__img {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     @media (min-width: $tablet-width) {
+      position: relative;
       display: block;
       width: 151px;
       height: 99px;
@@ -47,4 +84,16 @@
       height: 113px;
     }
   }
+}
+
+.product-photo__item:nth-child(2) {
+  z-index: 4;
+}
+
+.product-photo__item:nth-child(4) {
+  z-index: 2;
+}
+
+.product-photo__item:nth-child(5) {
+  z-index: 1;
 }
