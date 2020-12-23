@@ -1,22 +1,22 @@
 .showing {
   width: 177px;
   margin: 0 auto;
-  padding: 20px 0 60px;
+  padding: 24px 0 60px;
 
   @media (min-width: $tablet-width) {
     width: 206px;
-    padding: 20px 0 100px;
+    padding: 7px 0 100px;
   }
 
   @media (min-width: $desktop-width) {
     width: 200px;
-    padding: 20px 0 130px;
+    padding: 5px 0 130px;
   }
 }
 
 .showing__content {
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
 
   @include text-second;
 

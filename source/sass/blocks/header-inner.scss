@@ -4,17 +4,17 @@
   margin: 0 auto 15px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 35px;
+    margin: 0 auto 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 40px;
   }
 }
 
 .header-inner__logo {
   padding-top: 30px;
 }
-
-// .header-inner__nav {
-  // align-items: center;
-// }
 
 .header-inner__wrapp-top {
   position: relative;

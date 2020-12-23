@@ -1,6 +1,5 @@
 .result {
   position: relative;
-  border: 1px solid red;
 }
 
 .result__list {
@@ -20,6 +19,12 @@
   @media (min-width: $desktop-width) {
     width: 243px;
     height: 270px;
+  }
+}
+
+.result__item {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 17px;
   }
 }
 
@@ -66,6 +71,6 @@
 
 .result__item:nth-child(9) {
   @media (min-width: $desktop-width) {
-    margin-left: 300px;
+    margin-left: 310px;
   }
 }

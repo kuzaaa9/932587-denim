@@ -22,7 +22,6 @@
     align-items: start;
     top: 115px;
     left: 50%;
-    // width: 1170px;
     margin-left: -585px;
     padding-top: 0;
   }
@@ -31,8 +30,15 @@
 .main-nav--page-inner {
   position: absolute;
   top: 0;
-  padding-top: 15px;
-  // align-items: center;
+  padding: 15px 15px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 45px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 0 0;
+  }
 }
 
 .main-nav__toggle {

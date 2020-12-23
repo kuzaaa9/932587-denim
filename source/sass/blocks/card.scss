@@ -10,7 +10,7 @@
 
 .card__figure {
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
@@ -85,11 +85,5 @@
     @media (min-width: $desktop-width) {
       padding-top: 32px;
     }
-  }
-}
-
-.result__list {
-  .card__figure {
-    padding-bottom: 27px;
   }
 }

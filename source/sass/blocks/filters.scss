@@ -1,6 +1,7 @@
 .filters {
   position: relative;
-  width: 320px;
+  width: 290px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding-bottom: 40px;
   z-index: 100;
@@ -11,10 +12,13 @@
     top: 0;
     right: 0;
     width: 206px;
+    padding-bottom: 0;
+    margin-right: 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 243px;
+    margin-right: 0;
   }
 }
 
@@ -27,7 +31,8 @@
 }
 
 .filters__nav {
-  width: 320px;
+  position: relative;
+  width: 290px;
 
   @media (min-width: $tablet-width) {
     width: 206px;
@@ -42,13 +47,17 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 290px;
+  width: 100%;
   box-sizing: border-box;
   padding: 12px 15px 11px 15px;
-  margin: 0 auto;
+  margin: 0;
   border: 2px solid #151c22;
   align-items: center;
   background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 15px 14px 15px;
+  }
 }
 
 .filters__btn::after {
