@@ -2,21 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport"content="width=device-width, initial-scale=1">
-  <link rel="preload"href="/fonts/worksans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload"href="/fonts/worksansmedium.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload"href="/fonts/worksansbold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload"href="/fonts/worksansextrabold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload"href="/fonts/antonioregular.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet"type="text/css" href="css/style.css"crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="/fonts/worksans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/worksansmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/worksansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/worksansextrabold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/antonioregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css" crossorigin="anonymous">
   <title>Магазин одежды "Nîmes-страница продукта</title>
 </head>
 <body>
   <header class="header-inner">
-    <a class="header-inner__logo logo"href="index.html">Nîmes
+    <a class="header-inner__logo logo" href="index.html">Nîmes
     </a>
     <nav class="main-nav main-nav--page-inner main-nav--closed container">
-      <button class="main-nav__toggle"type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list buyers-list">
@@ -32,16 +32,16 @@
       </ul>
       <ul class="main-nav__wrapp search">
         <li class="search__item">
-          <a class="search__link"href="#"></a>
-          <form class="search__form"action="#"method="post">
+          <a class="search__link" href="#"></a>
+          <form class="search__form" action="#" method="post">
             <button class="search__button">
-              <img class="search__img"src="img/icon-search.svg"width="16"height="16"alt="Иконка лупы">
+              <img class="search__img" src="img/icon-search.svg" width="16" height="16" alt="Иконка лупы">
             </button>
           </form>
         </li>
         <li class="search__item">
-          <a class="search__link cart"href="#">
-            <img class="cart__img"src="img/icon-cart.svg"width="18"height="16"alt="Иконка корзины">
+          <a class="search__link cart" href="#">
+            <img class="cart__img" src="img/icon-cart.svg" width="18" height="16" alt="Иконка корзины">
           </a>
         </li>
       </ul>
@@ -52,68 +52,103 @@
     <section class="product-card-main__list">
       <h2 class="visually-hidden">Карточка и фильтр 1 товара</h2>
       <div class="product-card-main__photo product-photo">
-        <div class="product-photo__arrow">
-        </div>
         <ul class="product-photo__list card">
           <li class="product-photo__item card__item">
-            <a class="card__link"href="product-card.html">
-              <img class="product-photo__img card__img" src="img/photo-14-desktop@1x.jpg" width="244 "height="310"alt="Фото модели в фас первое">
+            <a class="card__link" href="product-card.html">
+              <img class="product-photo__img product-photo__img--basic card__img" src="img/photo-14-desktop@1x.jpg" width="244" height="310" alt="Фото модели в фас базовое">
             </a>
           </li>
           <li class="product-photo__item card__item">
-            <a class="card__link"href="product-card.html">
+            <a class="card__link" href="product-card.html">
               <img class="product-photo__img card__img" src="img/photo-14a-desktop@1x.jpg" width="244" height="310" alt="Фото модели в фас второе">
-            <a>
+            </a>
           </li>
           <li class="product-photo__item card__item">
-            <a class="card__link"href="product-card.html">
+            <a class="card__link" href="product-card.html">
               <img class="product-photo__img card__img" src="img/photo-14b-desktop@1x.jpg" width="244" height="310" alt="Фото модели слева">
-            <a>
+            </a>
           </li>
           <li class="product-photo__item card__item">
-            <a class="card__link"href="product-card.html">
+            <a class="card__link" href="product-card.html">
               <img class="product-photo__img card__img" src="img/photo-14c-desktop@1x.jpg" width="244" height="310" alt="Фото модели справа">
-            <a>
+            </a>
           </li>
           <li class="product-photo__item card__item">
-            <a class="card__link"href="product-card.html">
+            <a class="card__link" href="product-card.html">
               <img class="product-photo__img card__img" src="img/photo-14f-desktop@1x.jpg" width="244" height="310" alt="Фото модели сидя">
-            <a>
+            </a>
             </li>
         </ul>
-        <form class="product-card-main__form product-form"action="#"method="post">
-          <p class="product-form__title text-title">Overalls</p>
+        <form class="product-photo__form product-form" action="#" method="post">
+          <p class="product-form__title">Overalls</p>
           <p class="product-form__content">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist.
             Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.
           </p>
-          <fieldset class="product-form__color color">
-            <legend class="color__label">Color</legend>
-            <input class="color__input"type="checkbox"name="color"id="color-1"checked>
-            <input class="color__input"type="checkbox"name="color"id="color-2">
-            <input class="color__input"type="checkbox"name="color"id="color-3">
-          </fieldset>
-          <fieldset class="product-form__size size">
-            <legend class="size__label">size</legend>
-            <input class="size__input"type="checkbox"name="size"id="xs">
-            <input class="size__input"type="checkbox"name="size"id="s"checked>
-            <input class="size__input"type="checkbox"name="size"id="m">
-            <input class="size__input"type="checkbox"name="size"id="l">
-            <input class="size__input"type="checkbox"name="size"id="xl">
-          </fieldset>
-          <p class="product-form__cost">$160</p>
+          <ul class="product-form__list">
+            <li class="product-form__item">
+              <p class="product-form__item-title">Color</p>
+              <div class="product-form__item-content color">
+                <div class="color__list color__list--produkt">
+                  <div class="color__item">
+                    <input class="color__input" type="checkbox" name="color" id="color-1" checked>
+                    <label class="color__label" for="color-1"> </label>
+                  </div>
+                  <div class="color__item">
+                    <input class="color__input" type="checkbox" name="color" id="color-2">
+                    <label class="color__label" for="color-2"> </label>
+                  </div>
+                  <div class="color__item">
+                    <input class="color__input" type="checkbox" name="color" id="color-3">
+                    <label class="color__label" for="color-3"> </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-form__item">
+              <p class="product-form__item-title">Size</p>
+              <div class="product-form__item-content size">
+                <div class="size__list">
+                  <div class="size__item">
+                    <input class="size__input" type="checkbox" name="size" id="xs">
+                    <label class="size__label" for="color-1">xs</label>
+                  </div>
+                  <div class="size__item">
+                    <input class="size__input" type="checkbox" name="size" id="s" checked>
+                    <label class="size__label" for="color-1">s</label>
+                  </div>
+                  <div class="size__item">
+                    <input class="size__input" type="checkbox" name="size" id="m">
+                    <label class="size__label" for="color-1">m </label>
+                  </div>
+                  <div class="size__item">
+                    <input class="size__input" type="checkbox" name="size" id="l">
+                    <label class="size__label" for="color-1">l</label>
+                  </div>
+                  <div class="size__item">
+                    <input class="size__input" type="checkbox" name="size" id="xl">
+                    <label class="size__label" for="color-1">xl</label>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p class="product-form__price">$ 160</p>
           <button class="product-form__button btn-block">Add to cart
           </button>
         </form>
+      </div>
     </section>
+
+
     <section class="product-card-main__like like">
       <h2 class="like__title text-title">You may also like
       </h2>
       <a class="like__link" href="/catalog/bestsellers">View all</a>
       <ul class="like__list card">
         <li class="card__item">
-          <a class="card__link"href="product-card.html">
+          <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img"src="img/photo-15-desktop@1x.jpg" width="270" height="349"alt="Overalls">
+              <img class="card__img" src="img/photo-15-desktop@1x.jpg" width="270" height="349" alt="Overalls">
               <figcaption class="card__figcaption">
                 <p class="card__title">Overalls</p>
                 <p class="card__price">$140</p>
@@ -122,9 +157,9 @@
           </a>
         </li>
         <li class="card__item">
-          <a class="card__link"href="product-card.html">
+          <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img"src="img/photo-4-desktop@1x.jpg" width="270"height="349" alt="Overalls">
+              <img class="card__img" src="img/photo-4-desktop@1x.jpg" width="270" height="349" alt="Overalls">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p class="card__price">$110</p>
@@ -133,9 +168,9 @@
           </a>
         </li>
         <li class="card__item">
-          <a class="card__link"href="product-card.html">
+          <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img"src="img/photo-6-desktop@1x.jpg"width="270"height="349"alt="Overalls">
+              <img class="card__img" src="img/photo-6-desktop@1x.jpg" width="270" height="349" alt="Overalls">
               <figcaption class="card__figcaption">
                 <p class="card__title">Overalls</p>
                 <p class="card__price">$70</p>
@@ -144,9 +179,9 @@
           </a>
         </li>
         <li class="card__item">
-          <a class="card__link"href="product-card.html">
+          <a class="card__link" href="product-card.html">
             <figure class="card__figure">
-              <img class="card__img"src="img/photo-7-desktop@1x.jpg"width="270"height="349"alt="Overalls">
+              <img class="card__img" src="img/photo-7-desktop@1x.jpg" width="270" height="349" alt="Overalls">
               <figcaption class="card__figcaption">
                 <p class="card__title">Jacket</p>
                 <p>$60</p>

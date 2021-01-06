@@ -1,0 +1,49 @@
+.size {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 28px;
+  padding-right: 25px;
+}
+
+.size__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.size__item {
+  position: relative;
+  padding: 10px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 7px 0 0 0;
+  }
+}
+
+.size__input {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.size__label {
+  text-transform: uppercase;
+  color: $text-secondary-color;
+}

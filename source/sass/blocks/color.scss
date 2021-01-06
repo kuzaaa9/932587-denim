@@ -1,13 +1,23 @@
 .color {
-  padding-bottom: 25px;
+  display: block;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .form-group__item--closed .color {
-  display: none;
+  display: block;
 }
 
 .form-group__item--opened .color {
   display: block;
+  padding-bottom: 12px;
 }
 
 .color__list {
@@ -15,30 +25,41 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding-right: 10px;
+  width: 230px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 20px;
+    width: 110px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 15px;
+    width: 188px;
+  }
+}
+
+.color__list--produkt {
+  width: 88px;
+
+  @media (min-width: $tablet-width) {
+    width: 128px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95px;
   }
 }
 
 .color__item {
   position: relative;
-  width: 16%;
   height: 26px;
-  padding: 0;
+  padding: 15px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    width: 33%;
-    padding-bottom: 11px;
+    padding: 15px 28px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    padding: 15px 0 0 0;
   }
 }
 

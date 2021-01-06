@@ -16,7 +16,7 @@
 }
 
 .filters__nav--opened .form-group {
-  display: block;
+  display: none;
 }
 
 .form-group__filter {
@@ -26,7 +26,7 @@
 .form-group__btn-block-nav {
   display: flex;
   justify-content: space-between;
-  padding: 21px 15px 20px;
+  padding: 10px 0 9px;
   box-sizing: border-box;
   align-items: center;
   font-size: 14px;
@@ -89,7 +89,15 @@
 .form-group__list {
   @include list-reset;
   @include text-second;
-  padding-bottom: 157px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.filters__nav--opened .form-group__list {
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
@@ -99,8 +107,8 @@
 .form-group__item {
   position: relative;
   box-sizing: border-box;
-  padding: 12px 15px 10px;
-  border-bottom: 2px solid $color-main;
+  padding: 15px 0 10px;
+  border-bottom: 2px solid red;
 
   @include text-second;
 }

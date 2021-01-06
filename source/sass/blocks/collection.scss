@@ -10,7 +10,7 @@
 }
 
 .form-group__item--closed .collection {
-  display: none;
+  display: block;
 }
 
 .form-group__item--opened .collection {
@@ -23,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 13px 0 12px 0;
   font-size: 14px;
   line-height: auto;
   color: $text-secondary-color;

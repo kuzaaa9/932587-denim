@@ -23,10 +23,11 @@
 }
 
 .filters__info {
-  padding: 7px 15px 26px;
+  padding: 7px 0 26px;
 
   @media (min-width: $tablet-width) {
     display: none;
+    padding: 7px 15px 26px;
   }
 }
 
@@ -49,13 +50,14 @@
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  padding: 12px 15px 11px 15px;
+  padding: 12px 0 11px 0;
   margin: 0;
   border: 2px solid #151c22;
   align-items: center;
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
+
     padding: 13px 15px 14px 15px;
   }
 }

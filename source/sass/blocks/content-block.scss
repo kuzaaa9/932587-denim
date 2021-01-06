@@ -22,14 +22,12 @@
 }
 
 
-  .content-block__title {
-    @media (min-width: $tablet-width) {
-
+.content-block__title {
+  @media (min-width: $tablet-width) {
     display: block;
 
     @include list-reset;
     @include text-title;
-
     padding-bottom: 0;
     font-size: 28px;
   }

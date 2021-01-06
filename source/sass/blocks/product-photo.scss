@@ -1,99 +1,71 @@
-.product-photo__list {
-  @include list-reset;
+.product-photo {
+  position: relative;
+  padding-top: 10px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 15px;
+  }
+}
+
+.product-photo__list {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 38px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    margin: 0 30px 0 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
+    margin: 0 130px 0 70px;
   }
 }
 
-// Слайдер на мобилке
 .product-photo__img {
+  display: none;
   width: 244px;
   height: 310px;
-}
-
-.product-photo__item::before,
-.product-photo__item::after {
-  position: absolute;
-  top: 50%;
-  content: "";
-  width: 18px;
-  height: 10px;
-  margin-top: -9px;
-  background-image: url("../img/on.jpg");
-  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    display: block;
+    width: 151px;
+    height: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85px;
+    height: 113px;
   }
 }
 
-.product-photo__item::before {
-  right: 0;
-  transform: rotate(-90deg);
-}
+.product-photo__img--basic {
+  display: block;
 
-.product-photo__item::after {
-  left: 0;
-  transform: rotate(90deg);
-}
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 360px;
+  }
 
-.product-photo__item:first-child {
-  z-index: 5;
-
-  .product-photo__img {
-    position: relative;
-
-    @media (min-width: $tablet-width) {
-      width: 324px;
-      height: 360px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 400px;
-      height: 523px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    height: 523px;
   }
 }
 
-.product-photo__item:not(:first-child) {
-  .product-photo__img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.product-photo__item {
+  padding-bottom: 30px;
 
-    @media (min-width: $tablet-width) {
-      position: relative;
-      display: block;
-      width: 151px;
-      height: 99px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 85px;
-      height: 113px;
-    }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
   }
 }
 
-.product-photo__item:nth-child(2) {
-  z-index: 4;
-}
-
-.product-photo__item:nth-child(4) {
-  z-index: 2;
-}
-
-.product-photo__item:nth-child(5) {
-  z-index: 1;
+.product-photo__form {
+  flex-grow: 1;
 }

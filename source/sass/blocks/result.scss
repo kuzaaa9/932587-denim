@@ -23,6 +23,10 @@
 }
 
 .result__item {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 17px;
   }
