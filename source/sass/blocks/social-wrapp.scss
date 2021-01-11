@@ -1,36 +1,34 @@
 .social-wrapp {
+  @include list-reset;
+  justify-content: flex-start;
   display: block;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding-right: 17px;
   }
 }
 
 .social-wrapp__list {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
 
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    width: 210px;
+    width: 240px;
+    padding-left: 80px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 92px;
   }
 }
 
 .social-wrapp__item {
   display: block;
-  width: 21px;
-  height: 21px;
-  padding-right: 30px;
+  padding-left: 7px;
+  padding-right: 27px;
   vertical-align: middle;
-
-  @media (min-width: $tablet-width) {
-    width: 17px;
-    height: 17px;
-    padding-right: 0;
-    padding-left: 34px;
-  }
 }

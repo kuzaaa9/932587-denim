@@ -14,14 +14,10 @@
   }
 }
 
-.social-wrapp {
-  @include list-reset;
-  justify-content: flex-start;
-  padding-right: 33px;
-}
+.social__item {
+  display: block;
 
-@media (min-width: $tablet-width) {
-  .social__item {
+  @media (min-width: $tablet-width) {
     padding-left: 31px;
   }
 
@@ -30,6 +26,7 @@
     padding-bottom: 25px;
   }
 }
+
 
 .social__link {
   color: $color-main-second;

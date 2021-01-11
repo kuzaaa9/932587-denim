@@ -46,17 +46,25 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding-right: 45px;
+    padding-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 0;
+    padding-right: 5px;
+    padding-top: 5px;
   }
 }
 
 .categories__item:nth-child(3) {
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+  }
+
   @media (min-width: $desktop-width) {
     order: 1;
+    padding-top: 0;
   }
 }
 

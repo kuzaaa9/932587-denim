@@ -1,7 +1,7 @@
 .hit-list {
   position: relative;
   display: block;
-  padding-bottom: 60px;
+  padding-bottom: 62px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -20,7 +20,7 @@
   font-size: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 52px;
+    padding-bottom: 51px;
     font-size: 28px;
   }
 
@@ -38,7 +38,7 @@
   flex-wrap: wrap;
 
   @include list-reset;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 .hit-list__link {

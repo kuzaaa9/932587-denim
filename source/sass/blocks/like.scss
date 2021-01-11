@@ -1,6 +1,63 @@
+.like {
+  position: relative;
+  padding-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 119px;
+  }
+}
+
 .like__list {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.like__title {
+  padding-bottom: 34px;
+  margin: 0;
+
+  @include text-title;
+  font-size: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 53px;
+    font-size: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 64px;
+
+    @include text-title;
+  }
+}
+
+.like__link {
+  position: relative;
+  // display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 50px;
+    padding-top: 98px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 5px;
+    padding-top: 125px;
+  }
 }

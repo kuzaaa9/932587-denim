@@ -1,14 +1,14 @@
 .header-inner {
   position: relative;
   background-color: $color-main;
-  margin: 0 auto 15px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 26px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 40px;
+    margin: 0 auto;
   }
 }
 

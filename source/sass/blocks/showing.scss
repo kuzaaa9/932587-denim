@@ -1,16 +1,16 @@
 .showing {
   width: 177px;
   margin: 0 auto;
-  padding: 24px 0 60px;
+  padding: 24px 0 0;
 
   @media (min-width: $tablet-width) {
     width: 206px;
-    padding: 7px 0 100px;
+    padding: 7px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 200px;
-    padding: 5px 0 130px;
+    padding: 0;
   }
 }
 
@@ -32,6 +32,10 @@
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 40px;
   }
 }
