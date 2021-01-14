@@ -1,0 +1,10 @@
+.cart__img {
+  display: block;
+  width: 18px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 18px;
+  }
+}
