@@ -13,7 +13,7 @@
   padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 47px;
+    padding-bottom: 48px;
   }
 }
 
@@ -58,7 +58,6 @@
   }
 }
 
-//Для секции- Shop by category
 .categories__list {
   .card__figure {
     padding: 0;
@@ -88,7 +87,14 @@
   }
 }
 
-//Для секции- product-photo__list
+.product-photo__item:nth-child(1) .card__img {
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+}
+
 .product-photo__item:nth-child(4) .card__img,
 .product-photo__item:nth-child(5) .card__img {
   padding-bottom: 0;

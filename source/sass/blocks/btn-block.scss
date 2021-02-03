@@ -5,6 +5,7 @@
   padding: 0;
 
   @include text-second;
+  line-height: 19px;
   font-weight: bold;
   color: $color-background;
   background-color: $color-main-second;

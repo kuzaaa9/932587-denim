@@ -17,18 +17,40 @@
 
   @media (min-width: $tablet-width) {
     width: 240px;
-    padding-left: 80px;
+    padding-left: 60px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 92px;
+    padding-left: 75px;
   }
 }
 
 .social-wrapp__item {
   display: block;
-  padding-left: 7px;
-  padding-right: 27px;
+  padding-right: 34px;
   vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 28px;
+  }
+}
+
+.social-wrapp__img {
+  width: 21px;
+  height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 17px;
+    height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21px;
+    height: 20px;
+  }
 }

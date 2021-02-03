@@ -3,11 +3,11 @@
   padding-top: 55px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 95px;
+    padding-top: 94px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 119px;
+    padding-top: 122px;
   }
 }
 
@@ -45,15 +45,13 @@
 
 .like__link {
   position: relative;
-  // display: block;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
     right: 0;
-    padding-right: 50px;
-    padding-top: 98px;
+    padding-top: 94px;
   }
 
   @media (min-width: $desktop-width) {

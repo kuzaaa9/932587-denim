@@ -21,26 +21,27 @@
   display: block;
   width: 109px;
   height: 80px;
-  background: $color-main url("../img/diagonal.svg");
+  background: url("../img/diagonal-mobile@1x.jpg");
   z-index: 10;
 
   @media (min-width: $tablet-width) {
     width: 141px;
     height: 104px;
+    background: url("../img/diagonal-tablet@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 232px;
     height: 176px;
+    background: url("../img/diagonal-desktop@1x.jpg");
   }
 }
 
 .promo-photo::before {
   top: 0;
   left: 0;
-  margin-top: -20px;
-  margin-left: -20px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  margin-top: -23px;
+  margin-left: -23px;
 
   @media (min-width: $tablet-width) {
     margin-top: -30px;
@@ -56,8 +57,9 @@
 .promo-photo::after {
   bottom: 0;
   right: 0;
-  margin-bottom: -20px;
-  margin-right: -20px;
+  margin-bottom: -23px;
+  margin-right: -23px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 
   @media (min-width: $tablet-width) {
     margin-bottom: -30px;

@@ -1,7 +1,7 @@
 .showing {
   width: 177px;
   margin: 0 auto;
-  padding: 24px 0 0;
+  padding: 20px 0 0;
 
   @media (min-width: $tablet-width) {
     width: 206px;
@@ -16,11 +16,13 @@
 
 .showing__content {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 
   @include text-second;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+
     @include text-main;
     font-weight: 400;
   }
@@ -29,14 +31,14 @@
 .showing__scale {
   position: relative;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 36px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 40px;
+    padding-bottom: 43px;
   }
 }
 

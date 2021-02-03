@@ -1,8 +1,8 @@
 .collection {
-  box-sizing: border-box;
+  width: 290px;
   padding: 0;
   bottom: 0;
-  width: 290px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 176px;

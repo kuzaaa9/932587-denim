@@ -3,24 +3,21 @@
   width: 290px;
   box-sizing: border-box;
   margin: 0 auto;
+  margin-bottom: 40px;
   z-index: 100;
   background-color: $color-background;
-  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
     right: 0;
     width: 206px;
-    margin-top: 25px;
-    margin-right: 45px;
-    margin-bottom: 0;
+    margin: 25px 45px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 243px;
-    margin-top: 40px;
-    margin-right: 0;
+    margin: 40px 0 0 0;
   }
 }
 

@@ -28,20 +28,6 @@
   }
 }
 
-.main-nav--page-inner {
-  position: relative;
-  top: 0;
-  padding: 15px 15px 0;
-
-  @media (min-width: $tablet-width) {
-    top: 3px;
-    padding: 0 45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 20px 0 0;
-  }
-}
 
 .main-nav__toggle {
   position: absolute;
@@ -61,20 +47,8 @@
   }
 }
 
-// Закрытое состояние - бутерброд- внутренние страницы
-.main-nav--closed .main-nav__toggle {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 20px;
-  height: 2px;
-  padding-top: 25px;
-  padding-left: 15px;
-}
 
-.main-nav--closed .main-nav__toggle::before {
+ .main-nav__toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -89,3 +63,24 @@
     display: none;
   }
 }
+
+// внутренние страницы dct
+.main-nav--closed .main-nav--page-inner {
+  @media (min-width:$tablet-width) {
+    padding-top: 10px;
+  }
+}
+
+// внутренние страницы заккрыто - кнопка пирожок
+.main-nav--closed .main-nav--page-inner {
+   .main-nav__toggle {
+  display: block;
+ }
+}
+
+
+
+.main-nav--opened .main-nav--page-inner {
+  .main-nav__toggle {
+    display: none;
+  }

@@ -1,14 +1,11 @@
 .promo-photo-inner {
   position: relative;
   display: none;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    z-index: 1000;
-    width: 294px;
-    height: 260px;
-    box-sizing: border-box;
     order: 1;
+    display: block;
     margin-right: 30px;
   }
 
@@ -17,40 +14,44 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .promo-photo-inner::before {
+.promo-photo-inner::before,
+.promo-photo-inner::after {
+  @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
     display: block;
-    background: $color-main url("../img/diagonal.svg");
     z-index: 10;
     width: 178px;
     height: 135px;
     margin-left: -30px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background: $color-main url("../img/diagonal-inner-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo-photo-inner::before {
+    bottom: 0;
+    left: 0;
+    width: 178px;
+    height: 135px;
+    margin-left: -30px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .promo-photo-inner::after {
-    content: "";
-    position: absolute;
     top: 0;
     right: 0;
-    display: block;
-    background: $color-main url("../img/diagonal.svg");
-    z-index: 10;
     width: 232px;
     height: 176px;
     margin-right: -30px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 }
 
-@media (min-width: $tablet-width) {
-  .promo-photo-inner__img {
+.promo-photo-inner__img {
+  display: none;
+
+  @media (min-width: $tablet-width) {
     position: relative;
     display: block;
     z-index: 1000;

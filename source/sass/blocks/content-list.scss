@@ -1,6 +1,6 @@
 .content-list {
   @include list-reset;
-  padding: 45px 0 50px 0;
+  padding: 47px 0 50px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 0 84px;
@@ -14,33 +14,38 @@
 
 .content-list__slogan {
   margin: 0;
+  line-height: 18px;
   font-weight: 400;
   color: $text-secondary-color;
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .content-list__title {
   margin: 0;
-  padding-bottom: 24px;
+  padding: 0 0 25px 0;
   text-align: center;
 
   @include list-reset;
   font-family: "Anton", "Arial", sans-serif;
   font-weight: 400;
   font-size: 86px;
-  line-height: 104px;
+  line-height: 102px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
     font-size: 98px;
-    line-height: 122px;
+    line-height: 121px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 35px;
+    padding-bottom: 37px;
     font-size: 128px;
-    line-height: 136px;
+    line-height: 138px;
   }
 }
 
@@ -48,12 +53,14 @@
   display: block;
   width: 204px;
   box-sizing: border-box;
-  margin: 0;
-  padding: 22px 0 23px;
+  margin: 0 auto;
+  padding: 23px 0 23px;
   text-align: center;
+
 
   @media (min-width: $tablet-width) {
     width: 219px;
-    padding: 23px 0;
+    margin-left: 4px;
+    padding: 22px 0 23px;
   }
 }

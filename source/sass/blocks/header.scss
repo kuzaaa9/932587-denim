@@ -71,3 +71,30 @@
     align-items: center;
   }
 }
+
+.header__slider {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 10px;
+    height: 27px;
+    margin-left: 5px;
+    border-left: 2px solid #151c22;
+    z-index: 100;
+  }
+}
+
+.header__slider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: -5px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid #151c22;
+  border-left: 2px solid #151c22;
+  transform: rotate(-45deg);
+  z-index: 100;
+}

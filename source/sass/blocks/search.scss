@@ -1,3 +1,4 @@
+// 1 страница
 .search {
   display: flex;
   flex-direction: row;
@@ -48,15 +49,6 @@
   }
 }
 
-.main-nav--page-inner {
-  .search {
-    @media (min-width: $desktop-width) {
-      flex-direction: row;
-      align-items: center;
-      padding-bottom: 0;
-    }
-  }
-
   .search__item {
     @media (min-width: $desktop-width) {
       padding-left: 35px;
@@ -67,4 +59,3 @@
       order: 1;
     }
   }
-}

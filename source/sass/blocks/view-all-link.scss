@@ -2,6 +2,7 @@
   position: relative;
   display: block;
   width: 70px;
+
   margin: 0 auto;
 
   @include text-second;
@@ -9,6 +10,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    width: 80px;
+    margin-right: 45px;
 
     @include text-main;
     font-weight: 500;
@@ -16,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     font-weight: 500;
+    margin-right: 0;
   }
 }
 
@@ -23,9 +27,13 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-bottom: -2px;
   content: "";
   width: 70px;
+  margin-bottom: -4px;
   border: 1px solid $color-main-second;
-  text-align: inherit;
+
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
 }
