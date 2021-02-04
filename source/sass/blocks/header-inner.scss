@@ -1,15 +1,5 @@
 .header-inner {
   position: relative;
-  background-color: $color-main;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-  }
 }
 
 .header-inner__wrapp-top {

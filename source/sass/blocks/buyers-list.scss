@@ -1,17 +1,40 @@
-
 .buyers-list {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  padding: 25px 0;
 
   @include list-reset;
   @include text-second;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 108px 0 24px;
+    padding-left: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
 }
+
+// Внутренние страницы закрыто на ширине мобилки
+.main-nav--closed .buyers-list {
+  display: none;
+}
+
+.main-nav--opened .buyers-list {
+  display: none;
+
+  @media (min-width: $tablet-width)  {
+   display: flex;
+   padding: 25px 0 22px 45px;
+
+ }
+}
+
+
 
 
 .buyers-list__item {
@@ -33,23 +56,11 @@
 }
 
 // Внутренние страницы закрыто на ширине мобилки
-.main-nav--closed .main-nav--page-inner {
-  .buyers-list {
-    visibility: hidden;
+.main-nav--closed .buyers-list {
+  display: none;
 
-    @media (min-width:$tablet-width) {
-      visibility: visible;
-    }
-  }
-}
-
-.main-nav--opened .main-nav--page-inner {
-  .buyers-list {
-    visibility: hidden;
-    padding-top: 57px;
-
-    @media (min-width:$tablet-width) {
-      visibility: visible;
-    }
-  }
+  @media (min-width: $tablet-width)  {
+   display: flex;
+   padding: 25px 0 22px 45px;
+ }
 }

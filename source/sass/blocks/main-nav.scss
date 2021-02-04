@@ -1,33 +1,24 @@
 .main-nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
   width: 320px;
-  min-height: 57px;
-  padding-top: 13px;
+  padding-top: 57px;
   box-sizing: border-box;
+  margin: 0 auto;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 768px;
-    padding-top: 30px;
-    min-height: 67px;
-    margin: 0 auto;
+    padding: 0;
+    border:  1px solid red;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 1000;
-    position: absolute;
     width: 1170px;
-    align-items: start;
-    top: 115px;
-    left: 50%;
-    margin-left: -585px;
     padding-top: 0;
   }
 }
-
 
 .main-nav__toggle {
   position: absolute;
@@ -47,8 +38,7 @@
   }
 }
 
-
- .main-nav__toggle::before {
+.main-nav__toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -65,22 +55,18 @@
 }
 
 // внутренние страницы dct
-.main-nav--closed .main-nav--page-inner {
-  @media (min-width:$tablet-width) {
-    padding-top: 10px;
+.main-nav--page-inner {
+  padding-top:  0;
+  @media (min-width: $tablet-width) {
+    position: relative ;
   }
 }
 
-// внутренние страницы заккрыто - кнопка пирожок
-.main-nav--closed .main-nav--page-inner {
-   .main-nav__toggle {
-  display: block;
- }
-}
+// .main-nav--closed .main-nav__toggle {
+  // display: block;
+// }
 
-
-
-.main-nav--opened .main-nav--page-inner {
-  .main-nav__toggle {
-    display: none;
-  }
+// .main-nav--opened .main-nav__toggle {
+    // display: none;
+  // }
+// }

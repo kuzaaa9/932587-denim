@@ -1,12 +1,21 @@
 // 1 страница
 .search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 81px;
+  padding-right: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
 
   @include list-reset;
   @include text-second;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 104px;
+    padding-right: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
@@ -49,13 +58,17 @@
   }
 }
 
-  .search__item {
-    @media (min-width: $desktop-width) {
-      padding-left: 35px;
-      padding-bottom: 0;
-    }
-
-    @media (min-width: $tablet-width) {
-      order: 1;
-    }
+.search__item {
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+    padding-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.main-nav--page-inner .search {
+  padding-top: 26px;
+}
