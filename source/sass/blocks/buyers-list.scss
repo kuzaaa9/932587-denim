@@ -9,33 +9,14 @@
   @include text-second;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    padding: 108px 0 24px;
-    padding-left: 45px;
+    position: absolute;
+    padding: 41px 0 24px 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
 }
-
-// Внутренние страницы закрыто на ширине мобилки
-.main-nav--closed .buyers-list {
-  display: none;
-}
-
-.main-nav--opened .buyers-list {
-  display: none;
-
-  @media (min-width: $tablet-width)  {
-   display: flex;
-   padding: 25px 0 22px 45px;
-
- }
-}
-
-
-
 
 .buyers-list__item {
   padding-right: 25px;
@@ -45,9 +26,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 0;
     padding-bottom: 28px;
-    align-items: flex-end;
+    //  align-items: flex-end;
   }
 }
 
@@ -56,11 +36,19 @@
 }
 
 // Внутренние страницы закрыто на ширине мобилки
-.main-nav--closed .buyers-list {
-  display: none;
+.main-nav--page-inner .buyers-list {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 
-  @media (min-width: $tablet-width)  {
-   display: flex;
-   padding: 25px 0 22px 45px;
- }
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    display: flex;
+    padding: 28px 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }

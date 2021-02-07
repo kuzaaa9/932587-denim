@@ -1,5 +1,6 @@
 .header-inner {
   position: relative;
+  background-color: $color-main;
 }
 
 .header-inner__wrapp-top {
@@ -9,16 +10,14 @@
   box-sizing: border-box;
   width: 290px;
   padding: 0;
-  align-items: center;
   margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 678px;
-    padding: 0;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,8 +36,6 @@
 }
 
 .header-inner__wrapp-bottom {
-  display: none;
-
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
