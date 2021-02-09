@@ -3,18 +3,48 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 25px 0;
+  padding: 25px 0 21px;
+  background-color: inherit;
+  z-index: 1000;
 
   @include list-reset;
   @include text-second;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    padding: 41px 0 24px 0;
+    top: 0;
+    padding-top: 108px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    padding-top: 113px;
+  }
+}
+
+.main-nav--closed {
+  .buyers-list {
+    display: none;
+  }
+}
+
+.main-nav--opened {
+  .buyers-list {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.main-nav--closed,
+.main-nav--opened {
+  .buyers-list {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      display: flex;
+      padding-top: 28px;
+      flex-direction: row;
+    }
   }
 }
 
@@ -27,28 +57,21 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 28px;
-    //  align-items: flex-end;
+  }
+}
+
+.main-nav--opened {
+  .buyers-list__item {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid $color-background;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 35px 0 0;
+    }
   }
 }
 
 .buyers-list__link {
   color: $color-main-second;
-}
-
-// Внутренние страницы закрыто на ширине мобилки
-.main-nav--page-inner .buyers-list {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    display: flex;
-    padding: 28px 0 24px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-  }
 }

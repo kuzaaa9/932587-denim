@@ -7,7 +7,6 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    display: block;
     width: 768px;
     padding: 67px 45px 0 45px;
   }
@@ -24,104 +23,49 @@
   top: 0;
   left: 0;
   margin-left: 15px;
+  margin-top: 26px;
   width: 20px;
   height: 20px;
   border: 0;
   outline: none;
   cursor: pointer;
-  background-color: transparent;
+  background-color:  inherit;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav--closed .main-nav__toggle {
-  margin-top: 32px;
-}
-
-.main-nav--opened .main-nav__toggle {
-  margin-top: 20px;
-}
-
-// Кнопка - пирожок - призакрытом меню
 .main-nav--closed .main-nav__toggle::before,
-.main-nav--opened .main-nav__toggle::before {
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 15px;
   width: 20px;
   height: 2px;
   background-color: #151c22;
-  box-shadow: 0 5px 0 0 #151c22, 0 10px 0 0 #151c22;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-// Кнопка - крестик- при открытом меню
-.main-nav--opened .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  margin-left: -10px;
+.main-nav--closed .main-nav__toggle::before {
   width: 20px;
-  height: 2px;
-  background-color: #151c22;
+  box-shadow: 0 5px 0 0 #151c22, 0 10px 0 0 #151c22;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  width: 23px;
+  margin-top: 10px;
   transform: rotate(45deg);
 }
 
 .main-nav--opened .main-nav__toggle::after {
-  content: "";
-  position: absolute;
+  width: 23px;
   margin-top: 10px;
-  width: 20px;
-  height: 2px;
-  top: 0;
-  left: 0;
   transform: rotate(-45deg);
-  background-color: #151c22;
-}
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--page-inner .buyers-list__item {
-  @media (min-width: $desktop-width) {
-    padding-right: 35px;
-    padding-bottom: 0;
-  }
-}
-
-.main-nav--closed .main-nav--page-inner {
-  .buyers-list {
-    display: none;
-    padding: 28px 0;
-
-    @media (min-width:$tablet-width) {
-      display: flex;
-      border-bottom: 0 none;
-    }
-  }
-}
-
-.main-nav--opened .main-nav--page-inner {
-  .buyers-list {
-    @media (max-width: $tablet-width) {
-      display: block;
-    }
-  }
-}
-
-.main-nav--opened .main-nav--page-inner .buyers-list__item {
-  padding: 15px 0;
-  text-align: center;
-  border-bottom: 2px solid $color-background;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 35px;
-  }
+  box-shadow: 0 none;
 }
