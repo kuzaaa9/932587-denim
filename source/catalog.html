@@ -68,24 +68,24 @@
       <div class="filters__info">Woman / Jackets</div>
       <h2 class="visually-hidden">Выпадающие фильтры по параметрам</h2>
       <div class="filters__nav filters__nav--closed ">
-        <button class="filters__btn" type="button">
+        <div class="filters__btn">
           <span class="filters__title">Filter by</span>
-        </button>
+        </div>
         <form  class="form-group" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-group__filter">
-            <div class="form-group__btn-block-nav">
-              <button class="form-group__btn">
+            <div class="form-group__btn-wrapp">
+              <button type="button" class="form-group__btn">
                 <span class="form-group__item-btn">Clear all</span>
               </button>
               <h3 class="form-group__title">Filters</h3>
-              <button class="form-group__btn">
+              <button type="button" class="form-group__btn">
                 <span class="form-group__item-btn form-group__item-btn--close">Close</span>
               </button>
             </div>
             <ul class="form-group__list">
-              <li class="form-group__item form-group__item--closed">
-                <p class="form-group__item-title">Price</p>
-                <div class="form-group__item-content price">
+              <li class="form-group__item">
+                <h4 class="form-group__item-title">Price</h4>
+                <div class="form-group__item-content price price--closed">
                   <input class="price__range" type="range" id="dayscount" name="dayscount" min="1" max="500" step="1">
                   <div class="price__values">
                     <div class="price__data-min">
@@ -98,7 +98,7 @@
                 </div>
               </li>
               <li class="form-group__item form-group__item--closed">
-                <p class="form-group__item-title">Color</p>
+                <h4 class="form-group__item-title">Color</h4>
                 <div class="form-group__item-content color">
                   <div class="color__list">
                     <div class="color__item">
@@ -129,7 +129,7 @@
                 </div>
               </li>
               <li class="form-group__item form-group__item--closed">
-                <p class="form-group__item-title">Collection</p>
+                <h4 class="form-group__item-title">Collection</h4>
                 <div class="form-group__item-content collection">
                   <ul class="collection__list">
                     <li class="collection__item">
@@ -378,5 +378,7 @@
     </div>
   </footer>
   <script src="js/openmenu.js"></script>
+  <script src="js/openfilters.js"></script>
+  <script src="js/closedfilters.js"></script>
 </body>
 </html>

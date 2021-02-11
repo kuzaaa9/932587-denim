@@ -1,6 +1,5 @@
 .filters {
   position: relative;
-  width: 290px;
   box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -13,6 +12,7 @@
     right: 0;
     width: 206px;
     margin: 25px 45px 0 0;
+    border: 2px solid #151c22;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,17 +22,17 @@
 }
 
 .filters__info {
-  padding: 7px 0 26px;
+  padding: 7px 0 26px 15px;
 
   @media (min-width: $tablet-width) {
     display: none;
-    padding: 7px 15px 26px;
   }
 }
 
 .filters__nav {
   position: relative;
-  width: 290px;
+  margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     width: 206px;
@@ -43,32 +43,73 @@
   }
 }
 
-.filters__btn {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  border: 2px solid #151c22;
-  align-items: center;
-  background-color: inherit;
-  padding: 12px 14px 12px 14px;
-  outline: none;
-  cursor: pointer;
+.filters__nav--closed .filters__nav {
+  display: none;
 }
 
+.filters__nav--opened .filters__nav {
+  display: block;
+}
+
+.filters__btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 12px 14px 12px 14px;
+  background-color: inherit;
+  border: 2px solid #151c22;
+
+  @media (min-width: $tablet-width) {
+    border: 0 none;
+  }
+}
+
+.filters__btn::before,
 .filters__btn::after {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
-  content: "";
-  width: 18px;
-  height: 10px;
-  margin-top: 15px;
   margin-right: 15px;
-  background-image: url("../img/on.jpg");
-  background-repeat: no-repeat;
+  display: block;
+  width: 11px;
+  height: 11px;
+  transform: rotate(-45deg);
+}
+
+.filters__btn::before {
+  margin-top: 10px;
+  border-bottom: 2px solid #151c22;
+  border-left: 2px solid #151c22;
+}
+
+.filters__btn::after {
+  margin-top: 15px;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+}
+
+.filters__nav--closed .filters__btn {
+  display: block;
+
+  &::after {
+    display: none;
+  }
+}
+
+.filters__nav--opened .filters__btn {
+  display: none;
+
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border-bottom: 2px solid #151c22;
+  }
 }
 
 .filters__title {

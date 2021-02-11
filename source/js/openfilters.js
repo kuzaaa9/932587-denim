@@ -1,14 +1,25 @@
   var navFilters = document.querySelector('.filters__nav');
-  var filtersToggle = document.querySelector('.filters__btn');
+  var filtersOpenButton = document.querySelector('.filters__btn');
+  var filtersCloseButton = document.querySelector('.form-group__item-btn--close');
 
-    filtersToggle.addEventListener("click", function() {
-      if ( navFilters.classList.contains('main-nav--closed')) {
-         navFilters.classList.remove('main-nav--closed');
-         navFilters.classList.add('main-nav--opened');
-      }
-      else {
-         navFilters.classList.remove("main-nav--opened");
-         navFilters.classList.add("main-nav--closed");
-      }
-    }
-    );
+    filtersOpenButton.addEventListener("click", function() {
+      navFilters.classList.remove('filters__nav--closed');
+      navFilters.classList.add('filters__nav--opened');
+    });
+
+    filtersCloseButton.addEventListener("click", function() {
+        navFilters.classList.remove('filters__nav--opened');
+        navFilters.classList.add('filters__nav--closed');
+    });
+
+
+// if (document.documentElement.clientWidth > 768)
+// if (document.documentElement.clientWidth < 1200) {
+
+// } else {
+
+// };
+//
+//if (document.documentElement.clientWidth
+//
+//
