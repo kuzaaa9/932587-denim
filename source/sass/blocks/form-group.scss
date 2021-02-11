@@ -102,45 +102,76 @@
   }
 }
 
-// .filters__nav--opened .form-group__list {
-  // padding-bottom: 50px;
-
-  // @media (min-width: $tablet-width) {
-    // padding-bottom: 40px;
-  // }
-// }
-
 .form-group__item {
   position: relative;
   box-sizing: border-box;
-  padding: 13px 0 13px 15px;
+  padding: 13px 0;
 
   @include text-second;
   border-bottom: 2px solid $color-main;
 }
 
+.form-group__item__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
 .form-group__item-title {
-  position: relative;
   display: flex;
   margin: 0;
   font-weight: 500;
 }
 
-.form-group__item-title::after {
+.form-group__subbutton {
+  width:  10px;
+  height: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.form-group__subbutton::before,
+.form-group__subbutton::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   margin-right: 15px;
-  margin-top: -4px;
   display: block;
   width: 11px;
   height: 11px;
-  border-bottom: 2px solid #151c22;
-  border-left: 2px solid #151c22;
   transform: rotate(-45deg);
 }
 
+.form-group__subbutton::before {
+  margin-top: 10px;
+  border-bottom: 2px solid #151c22;
+  border-left: 2px solid #151c22;
+}
+
+.form-group__subbutton::after {
+  margin-top: 15px;
+  border-top: 2px solid #151c22;
+  border-right: 2px solid #151c22;
+}
+
+.form-group__item--price-closed .form-group__subbutton {
+  display: block;
+
+  &::after {
+    display: none;
+  }
+}
+
+.form-group__item--price-closed .form-group__subbutton {
+  display: block;
+
+  &::before {
+    display: none;
+  }
+}
 
 .form-group__button-apply {
   width: 100%;
@@ -153,10 +184,3 @@
     margin: 0;
   }
 }
-
-// .form-group__item-btn--close {
-  // @media (min-width: $tablet-width) {
-    // width: 0;
-    // display: none;
-  // }
-// }

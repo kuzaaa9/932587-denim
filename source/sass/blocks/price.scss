@@ -1,7 +1,7 @@
 .price {
   display: none;
   box-sizing: border-box;
-  padding: 8px 0 14px 0;
+  padding: 8px 15px;
   bottom: 0;
   width: 290px;
 
@@ -10,11 +10,11 @@
   }
 }
 
-.form-group__item--closed .price {
+.form-group__item--price-closed .price {
   display: none;
 }
 
-.form-group__item--opened .price {
+.form-group__item--price-opened .price {
   display: block;
 }
 

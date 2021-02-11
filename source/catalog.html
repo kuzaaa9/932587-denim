@@ -83,9 +83,13 @@
               </button>
             </div>
             <ul class="form-group__list">
-              <li class="form-group__item">
-                <h4 class="form-group__item-title">Price</h4>
-                <div class="form-group__item-content price price--closed">
+              <li class="form-group__item form-group__item--price-closed">
+                <div class="form-group__item__header">
+                  <h4 class="form-group__item-title">Price</h4>
+                  <button class="form-group__subbutton form-group__subbutton--price">
+                  </button>
+                </div>
+                <div class="form-group__item-content price">
                   <input class="price__range" type="range" id="dayscount" name="dayscount" min="1" max="500" step="1">
                   <div class="price__values">
                     <div class="price__data-min">
@@ -98,8 +102,12 @@
                 </div>
               </li>
               <li class="form-group__item form-group__item--closed">
-                <h4 class="form-group__item-title">Color</h4>
-                <div class="form-group__item-content color">
+                 <div class="form-group__item__header">
+                   <h4 class="form-group__item-title">Color</h4>
+                   <button class="form-group__subbutton">
+                   </button>
+                </div>
+                <div class="form-group__item-content color color--closed">
                   <div class="color__list">
                     <div class="color__item">
                       <input class="color__input" type="checkbox" name="color" id="color-1" checked>
@@ -129,7 +137,11 @@
                 </div>
               </li>
               <li class="form-group__item form-group__item--closed">
-                <h4 class="form-group__item-title">Collection</h4>
+                <div class="form-group__item__header">
+                   <h4 class="form-group__item-title">Collection</h4>
+                   <button class="form-group__subbutton">
+                   </button>
+                </div>
                 <div class="form-group__item-content collection">
                   <ul class="collection__list">
                     <li class="collection__item">

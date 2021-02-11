@@ -77,18 +77,17 @@
   width: 11px;
   height: 11px;
   transform: rotate(-45deg);
-}
-
-.filters__btn::before {
-  margin-top: 10px;
   border-bottom: 2px solid #151c22;
   border-left: 2px solid #151c22;
 }
 
+.filters__btn::before {
+  margin-top: 10px;
+
+}
+
 .filters__btn::after {
   margin-top: 15px;
-  border-top: 2px solid red;
-  border-right: 2px solid red;
 }
 
 .filters__nav--closed .filters__btn {

@@ -11,15 +11,3 @@
         navFilters.classList.remove('filters__nav--opened');
         navFilters.classList.add('filters__nav--closed');
     });
-
-
-// if (document.documentElement.clientWidth > 768)
-// if (document.documentElement.clientWidth < 1200) {
-
-// } else {
-
-// };
-//
-//if (document.documentElement.clientWidth
-//
-//
