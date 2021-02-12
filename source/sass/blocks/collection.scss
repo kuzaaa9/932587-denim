@@ -1,20 +1,18 @@
 .collection {
-  display: none;
-  width: 290px;
-  padding: 0;
-  bottom: 0;
+  display: block;
   box-sizing: border-box;
+  padding: 10px 15px 0;
 
   @media (min-width: $tablet-width) {
     width: 176px;
   }
 }
 
-.form-group__item--closed .collection {
+.form-group__item--collection-closed .collection {
   display: none;
 }
 
-.form-group__item--opened .collection {
+.form-group__item--collection-opened .collection {
   display: block;
 }
 

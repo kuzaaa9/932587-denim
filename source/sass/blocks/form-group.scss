@@ -105,7 +105,7 @@
 .form-group__item {
   position: relative;
   box-sizing: border-box;
-  padding: 13px 0;
+  padding: 15px 0;
 
   @include text-second;
   border-bottom: 2px solid $color-main;
@@ -152,25 +152,36 @@
 }
 
 .form-group__subbutton::after {
-  margin-top: 15px;
+  margin-top: 20px;
   border-top: 2px solid #151c22;
   border-right: 2px solid #151c22;
 }
 
-.form-group__item--price-closed .form-group__subbutton {
-  display: block;
 
-  &::after {
-    display: none;
-  }
+.form-group__item--price-closed .form-group__subbutton::before,
+.form-group__item--color-closed .form-group__subbutton::before,
+.form-group__item--collection-closed .form-group__subbutton::before {
+  display: block;
 }
 
-.form-group__item--price-closed .form-group__subbutton {
-  display: block;
 
-  &::before {
-    display: none;
-  }
+
+.form-group__item--price-closed .form-group__subbutton::after,
+.form-group__item--color-closed .form-group__subbutton::after,
+.form-group__item--collection-closed .form-group__subbutton::after {
+  display: none;
+}
+
+.form-group__item--price-opened .form-group__subbutton::before,
+.form-group__item--color-opened .form-group__subbutton::before,
+.form-group__item--collection-opened .form-group__subbutton::before {
+  display: none;
+}
+
+.form-group__item--price-opened .form-group__subbutton::after,
+.form-group__item--color-opened .form-group__subbutton::after,
+.form-group__item--collection-opened .form-group__subbutton::after {
+  display: block;
 }
 
 .form-group__button-apply {

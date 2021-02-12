@@ -1,21 +1,23 @@
 .price {
-  display: none;
+  display: block;
   box-sizing: border-box;
-  padding: 8px 15px;
-  bottom: 0;
-  width: 290px;
+  padding: 15px 15px 8px;
 
   @media (min-width: $tablet-width) {
     width: 176px;
   }
 }
 
-.form-group__item--price-closed .price {
-  display: none;
+.form-group__item--price-closed {
+  .price {
+    display: none;
+  }
 }
 
-.form-group__item--price-opened .price {
-  display: block;
+.form-group__item--price-opened {
+  .price {
+    display: block;
+  }
 }
 
 .price__range {
