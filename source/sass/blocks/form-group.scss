@@ -1,7 +1,7 @@
 .form-group {
   display: block;
   box-sizing: border-box;
-  width: 100%;
+
   margin: 0;
   border: 2px solid #151c22;
 
@@ -36,24 +36,15 @@
   align-items: center;
   font-size: 14px;
   line-height: auto;
-  border-top: 2px solid $color-main;
   border-bottom: 2px solid $color-main;
+  z-index: 1000;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    width: 206px;
     height: 67px;
-    margin-bottom: -67px;
     padding: 0;
 
     @include text-second;
     font-weight: 500;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 243px;
   }
 }
 
@@ -86,10 +77,6 @@
 
   @include text-main;
   font-weight: 700px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
 
 .form-group__list {
@@ -105,7 +92,7 @@
 .form-group__item {
   position: relative;
   box-sizing: border-box;
-  padding: 15px 0;
+  padding: 13px 0;
 
   @include text-second;
   border-bottom: 2px solid $color-main;
@@ -115,6 +102,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
+  align-items: center;
 }
 
 .form-group__item-title {
@@ -124,63 +112,31 @@
 }
 
 .form-group__subbutton {
-  width:  10px;
-  height: 10px;
-  border: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
   outline: 0;
   cursor: pointer;
   background-color: inherit;
-}
-
-.form-group__subbutton::before,
-.form-group__subbutton::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 15px;
-  display: block;
-  width: 11px;
-  height: 11px;
-  transform: rotate(-45deg);
-}
-
-.form-group__subbutton::before {
-  margin-top: 10px;
+  border-top: 0;
+  border-right: 0;
   border-bottom: 2px solid #151c22;
   border-left: 2px solid #151c22;
 }
 
-.form-group__subbutton::after {
-  margin-top: 20px;
-  border-top: 2px solid #151c22;
-  border-right: 2px solid #151c22;
+.form-group__item--closed .form-group__subbutton {
+  transform: rotate(-45deg);
 }
 
-
-.form-group__item--price-closed .form-group__subbutton::before,
-.form-group__item--color-closed .form-group__subbutton::before,
-.form-group__item--collection-closed .form-group__subbutton::before {
-  display: block;
+.form-group__item--opened .form-group__subbutton {
+  transform: rotate(140deg);
 }
 
-
-
-.form-group__item--price-closed .form-group__subbutton::after,
-.form-group__item--color-closed .form-group__subbutton::after,
-.form-group__item--collection-closed .form-group__subbutton::after {
+.form-group__item--closed .form-group__item-content {
   display: none;
 }
 
-.form-group__item--price-opened .form-group__subbutton::before,
-.form-group__item--color-opened .form-group__subbutton::before,
-.form-group__item--collection-opened .form-group__subbutton::before {
-  display: none;
-}
-
-.form-group__item--price-opened .form-group__subbutton::after,
-.form-group__item--color-opened .form-group__subbutton::after,
-.form-group__item--collection-opened .form-group__subbutton::after {
+.form-group__item--opened .form-group__item-content {
   display: block;
 }
 

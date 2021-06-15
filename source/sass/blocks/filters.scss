@@ -1,18 +1,17 @@
 .filters {
-  position: relative;
-  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 40px;
+  box-sizing: border-box;
   z-index: 100;
   background-color: $color-background;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     top: 0;
     right: 0;
     width: 206px;
     margin: 25px 45px 0 0;
-    border: 2px solid #151c22;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,12 +29,15 @@
 }
 
 .filters__nav {
-  position: relative;
+  width: 290px;
+  box-sizing: border-box;
   margin: 0 auto;
-
+  background-color: $color-background;
 
   @media (min-width: $tablet-width) {
     width: 206px;
+    border-left: 2px solid #151c22;
+    border-right: 2px solid #151c22;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,26 +50,26 @@
 }
 
 .filters__nav--opened .filters__nav {
+
   display: block;
 }
 
 .filters__btn {
   position: relative;
   display: block;
-  width: 100%;
+  width: 290px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 12px 14px 12px 14px;
-  background-color: inherit;
+  padding: 12px;
   border: 2px solid #151c22;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
-    border: 0 none;
+    width: 100%;
   }
 }
 
-.filters__btn::before,
-.filters__btn::after {
+.filters__btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -83,11 +85,6 @@
 
 .filters__btn::before {
   margin-top: 10px;
-
-}
-
-.filters__btn::after {
-  margin-top: 15px;
 }
 
 .filters__nav--closed .filters__btn {

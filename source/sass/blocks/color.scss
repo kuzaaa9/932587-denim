@@ -1,7 +1,7 @@
 .color {
   display: block;
   box-sizing: border-box;
-  padding: 10px 15px 0;
+  padding: 20px 15px 0;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -28,14 +28,14 @@
   width: 230px;
 
   @media (min-width: $tablet-width) {
-    width: 110px;
+    width: 120px;
   }
 
   @media (min-width: $desktop-width) {
     width: 188px;
   }
 }
-
+// Для третьей страницы-продукта
 .color__list--produkt {
   width: 88px;
 
@@ -50,20 +50,24 @@
 
 .color__item {
   position: relative;
-  height: 26px;
-  padding: 15px 0 0 0;
+  height: 16px;
+  width: 16px;
+  padding: 0;
+  border: 1px solid red;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 28px 0 0;
+    padding: 20px 25px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    padding: 15px 0 0 0;
+    padding: 0;
   }
 }
 
 .color__item:nth-child(1) {
+  border: 1px solid green;
+
   .color__label {
     background-color: #b0c3c7;
   }
